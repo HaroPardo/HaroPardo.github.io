@@ -9,11 +9,10 @@ Bienvenido a mi portafolio profesional! Un sitio web moderno y responsive que mu
 **Visita el sitio en vivo:**  
 [https://haropardo.github.io](https://haropardo.github.io)
 
-![Portfolio Screenshot](assets/portfolio-screenshot.jpg) *Reemplazar con tu screenshot*
+![Portfolio Screenshot](assets/perfil.png)
 
 ## ✨ Características Principales
 
-- **Diseño Moderno y Responsive** - Totalmente adaptable a móviles, tablets y desktop
 - **Sistema Multidioma** - Soporte completo para Español e Inglés
 - **Efectos Visuales Avanzados** - Animaciones CSS, gradientes y efectos de transición
 - **Secciones Destacadas**:
