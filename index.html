@@ -1264,23 +1264,19 @@
     </div>
 
     <script>
-        // Objeto con todas las traducciones (actualizado con textos para el curriculum)
         const translations = {
             es: {
-                // Navegación
                 "nav-home": "Inicio",
                 "nav-projects": "Proyectos",
                 "nav-skills": "Habilidades",
                 "nav-contact": "Contacto",
                 
-                // Hero
                 "hero-title": "Hola, soy David",
                 "hero-subtitle": "Desarrollador Full Stack",
                 "hero-description": "Creo soluciones digitales robustas utilizando las últimas tecnologías. Especializado en desarrollo web, aplicaciones de escritorio y bases de datos.",
                 "hero-projects-btn": "Ver mis proyectos",
                 "hero-contact-btn": "Contáctame",
                 
-                // Proyectos
                 "projects-title": "Mis Proyectos",
                 "projects-subtitle": "Explora mis últimos trabajos y proyectos personales",
                 "project-1-title": "Sistema CRM",
@@ -1299,7 +1295,6 @@
                 "project-3-details-btn": "Explicación Detallada",
                 "project-3-code-btn": "Ver código",
                 
-                // Habilidades
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que domino",
                 "skills-frontend-title": "Frontend",
@@ -1307,7 +1302,6 @@
                 "skills-db-title": "Bases de Datos",
                 "skills-tools-title": "Herramientas",
                 
-                // Contacto
                 "contact-title": "Contacto",
                 "contact-subtitle": "¿Interesado en trabajar juntos? ¡Contáctame!",
                 "contact-info-title": "Información de Contacto",
@@ -1323,10 +1317,9 @@
                 "cv-download-text": "Ver Curriculum (ES)",
                 "notification-cv-text": "¡Curriculum abierto con éxito!",
                 
-                // Footer
                 "footer-text": "Diseñado y desarrollado por David Haro Pardo",
                 
-                // Modales
+
                 "modal-crm-title": "Sistema CRM",
                 "crm-modal-q1": "¿Por qué lo creé?",
                 "crm-modal-a1": "Desarrollé este sistema CRM como un proyecto completo para aplicar y ampliar mis conocimientos en desarrollo web. Mi objetivo era crear una solución práctica que pudiera implementarse en entornos empresariales reales para optimizar la gestión de relaciones con clientes, consolidando al mismo tiempo mi dominio de las tecnologías fundamentales de frontend y backend.",
@@ -1352,20 +1345,17 @@
                 "movie-modal-a3": "Sí, las bases de datos son componentes críticos en cualquier sistema moderno. Estoy comprometido a seguir especializándome en este campo, particularmente en optimización de consultas, diseño de esquemas escalables e implementación en la nube."
             },
             en: {
-                // Navegación
                 "nav-home": "Home",
                 "nav-projects": "Projects",
                 "nav-skills": "Skills",
                 "nav-contact": "Contact",
                 
-                // Hero
                 "hero-title": "Hello, I'm David",
                 "hero-subtitle": "Full Stack Developer",
                 "hero-description": "I create robust digital solutions using the latest technologies. Specializing in web development, desktop applications and databases.",
                 "hero-projects-btn": "View my projects",
                 "hero-contact-btn": "Contact me",
                 
-                // Proyectos
                 "projects-title": "My Projects",
                 "projects-subtitle": "Explore my latest work and personal projects",
                 "project-1-title": "CRM System",
@@ -1384,7 +1374,6 @@
                 "project-3-details-btn": "Detailed Explanation",
                 "project-3-code-btn": "View Code",
                 
-                // Habilidades
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I master",
                 "skills-frontend-title": "Frontend",
@@ -1392,7 +1381,6 @@
                 "skills-db-title": "Databases",
                 "skills-tools-title": "Tools",
                 
-                // Contacto
                 "contact-title": "Contact",
                 "contact-subtitle": "Interested in working together? Contact me!",
                 "contact-info-title": "Contact Information",
@@ -1408,10 +1396,8 @@
                 "cv-download-text": "Watch Resume (EN)",
                 "notification-cv-text": "Resume opened successfully!",
                 
-                // Footer
                 "footer-text": "Designed and developed by David Haro Pardo",
                 
-                // Modales
                 "modal-crm-title": "CRM System",
                 "crm-modal-q1": "Why did I create it?",
                 "crm-modal-a1": "I developed this CRM system as a comprehensive project to apply and expand my knowledge in web development. I aimed to create a practical solution that could be implemented in real business environments to optimize customer relationship management, while consolidating my mastery of fundamental frontend and backend technologies.",
@@ -1438,15 +1424,11 @@
             }
         };
 
-        // Función para cambiar el idioma
         function setLanguage(lang) {
-            // Cambiar el atributo lang del documento
             document.documentElement.lang = lang;
             
-            // Obtener todas las claves de traducción
             const keys = Object.keys(translations[lang]);
             
-            // Actualizar todos los textos
             keys.forEach(key => {
                 const elements = document.querySelectorAll(`[id="${key}"]`);
                 elements.forEach(element => {
@@ -1458,25 +1440,20 @@
                 });
             });
             
-            // Actualizar el enlace del curriculum según el idioma
             const cvLink = document.getElementById('cv-download-link');
             cvLink.href = `assets/DHP-Curriculum-${lang}.pdf`;
             
-            // Actualizar botones activos
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
             document.getElementById(`lang-${lang}`).classList.add('active');
             
-            // Guardar preferencia en localStorage
             localStorage.setItem('preferredLanguage', lang);
         }
 
-        // Copiar correo al portapapeles
         document.getElementById('copy-email-btn').addEventListener('click', function() {
             const email = 'dharopardo@gmail.com';
             
-            // Crear un elemento temporal para copiar
             const tempInput = document.createElement('textarea');
             tempInput.value = email;
             document.body.appendChild(tempInput);
@@ -1484,30 +1461,25 @@
             document.execCommand('copy');
             document.body.removeChild(tempInput);
             
-            // Mostrar notificación
             const notification = document.getElementById('notification');
             notification.classList.add('show');
             document.getElementById('notification-text').textContent = translations[document.documentElement.lang]['notification-text'];
             
-            // Ocultar notificación después de 3 segundos
             setTimeout(() => {
                 notification.classList.remove('show');
             }, 3000);
         });
 
-        // Mostrar notificación al descargar el curriculum
         document.getElementById('cv-download-link').addEventListener('click', function() {
             const notification = document.getElementById('notification');
             document.getElementById('notification-text').textContent = translations[document.documentElement.lang]['notification-cv-text'];
             notification.classList.add('show');
             
-            // Ocultar notificación después de 3 segundos
             setTimeout(() => {
                 notification.classList.remove('show');
             }, 3000);
         });
 
-        // Efecto de desplazamiento de la barra de navegación
         window.addEventListener('scroll', function() {
             const header = document.getElementById('header');
             if (window.scrollY > 100) {
@@ -1516,7 +1488,6 @@
                 header.classList.remove('scrolled');
             }
             
-            // Efecto de aparición en elementos al desplazarse
             const fadeElements = document.querySelectorAll('.fade-in');
             fadeElements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
@@ -1529,7 +1500,6 @@
             });
         });
 
-        // Alternar menú móvil
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
         
@@ -1537,14 +1507,12 @@
             navLinks.classList.toggle('active');
         });
 
-        // Cerrar menú al hacer clic en un enlace
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
         });
 
-        // Desplazamiento suave para enlaces de anclaje
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1559,59 +1527,52 @@
             });
         });
 
-        // Funcionalidad de los modales
         const modals = document.querySelectorAll('.modal');
         const openModalBtns = document.querySelectorAll('.open-modal');
         const closeModalBtns = document.querySelectorAll('.close-modal');
         
-        // Abrir modal
         openModalBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const modalId = btn.getAttribute('data-modal');
                 const modal = document.getElementById(modalId);
                 if (modal) {
                     modal.style.display = 'block';
-                    document.body.style.overflow = 'hidden'; // Prevenir desplazamiento
+                    document.body.style.overflow = 'hidden';
                 }
             });
         });
         
-        // Cerrar modal
         closeModalBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const modal = btn.closest('.modal');
                 if (modal) {
                     modal.style.display = 'none';
-                    document.body.style.overflow = 'auto'; // Habilitar desplazamiento
+                    document.body.style.overflow = 'auto';
                 }
             });
         });
         
-        // Cerrar modal al hacer clic fuera
         window.addEventListener('click', (e) => {
             modals.forEach(modal => {
                 if (e.target === modal) {
                     modal.style.display = 'none';
-                    document.body.style.overflow = 'auto'; // Habilitar desplazamiento
+                    document.body.style.overflow = 'auto';
                 }
             });
         });
         
-        // Cerrar modal con la tecla Escape
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 modals.forEach(modal => {
                     if (modal.style.display === 'block') {
                         modal.style.display = 'none';
-                        document.body.style.overflow = 'auto'; // Habilitar desplazamiento
+                        document.body.style.overflow = 'auto';
                     }
                 });
             }
         });
         
-        // Inicializar animaciones
         document.addEventListener('DOMContentLoaded', function() {
-            // Establecer estilos iniciales para elementos con efecto de aparición
             const fadeElements = document.querySelectorAll('.fade-in');
             fadeElements.forEach(element => {
                 element.style.opacity = '0';
@@ -1619,20 +1580,16 @@
                 element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             });
             
-            // Disparar evento de desplazamiento para verificar posiciones iniciales
             window.dispatchEvent(new Event('scroll'));
             
-            // Establecer idioma preferido si existe en localStorage
             const savedLang = localStorage.getItem('preferredLanguage');
             if (savedLang) {
                 setLanguage(savedLang);
             } else {
-                // Inicializar el enlace del curriculum al español por defecto
                 document.getElementById('cv-download-link').href = 'assets/DHP-Curriculum-es.pdf';
             }
         });
         
-        // Cambio de idioma
         document.getElementById('lang-es').addEventListener('click', function() {
             setLanguage('es');
         });
