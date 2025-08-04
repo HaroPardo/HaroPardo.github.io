@@ -9,8 +9,6 @@ Bienvenido a mi portafolio profesional! Un sitio web moderno y responsive que mu
 **Visita el sitio en vivo:**  
 [https://haropardo.github.io](https://haropardo.github.io)
 
-![Portfolio Screenshot](assets/perfil.PNG)
-
 ## ✨ Características Principales
 
 - **Sistema Multidioma** - Soporte completo para Español e Inglés
