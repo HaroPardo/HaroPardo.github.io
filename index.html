@@ -740,6 +740,29 @@
             color: white;
         }
 
+        /* Nuevos estilos para el botón de curriculum */
+        .cv-download {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .cv-download .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            margin-top: 10px;
+        }
+        
+        .cv-download i {
+            font-size: 1.5rem;
+        }
+
         /* Animaciones */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -1136,6 +1159,15 @@
                                 <p>+34 649845932</p>
                             </div>
                         </div>
+                        
+                        <!-- Nuevo elemento para descargar el curriculum -->
+                        <div class="cv-download">
+                            <h4 id="cv-download-title">Descarga mi Curriculum</h4>
+                            <a id="cv-download-link" href="assets/DHP-Curriculum-es.pdf" target="_blank" class="btn">
+                                <i class="fas fa-file-download"></i>
+                                <span id="cv-download-text">Descargar Curriculum (ES)</span>
+                            </a>
+                        </div>
                     </div>
                     
                     <div class="social-links">
@@ -1252,7 +1284,7 @@
     </div>
 
     <script>
-        // Objeto con todas las traducciones
+        // Objeto con todas las traducciones (actualizado con textos para el curriculum)
         const translations = {
             es: {
                 // Navegación
@@ -1307,6 +1339,9 @@
                 "direct-email-description": "Haz clic en el botón para copiar mi dirección de correo al portapapeles:",
                 "copy-email-text": "Copiar Correo al Portapapeles",
                 "notification-text": "¡Correo copiado al portapapeles!",
+                "cv-download-title": "Descarga mi Curriculum",
+                "cv-download-text": "Descargar Curriculum (ES)",
+                "notification-cv-text": "¡Curriculum descargado con éxito!",
                 
                 // Footer
                 "footer-text": "Diseñado y desarrollado por David Haro Pardo",
@@ -1389,6 +1424,9 @@
                 "direct-email-description": "Click the button to copy my email address to clipboard:",
                 "copy-email-text": "Copy Email to Clipboard",
                 "notification-text": "Email copied to clipboard!",
+                "cv-download-title": "Download my Resume",
+                "cv-download-text": "Download Resume (EN)",
+                "notification-cv-text": "Resume downloaded successfully!",
                 
                 // Footer
                 "footer-text": "Designed and developed by David Haro Pardo",
@@ -1440,6 +1478,10 @@
                 });
             });
             
+            // Actualizar el enlace del curriculum según el idioma
+            const cvLink = document.getElementById('cv-download-link');
+            cvLink.href = `assets/DHP-Curriculum-${lang}.pdf`;
+            
             // Actualizar botones activos
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
@@ -1464,6 +1506,19 @@
             
             // Mostrar notificación
             const notification = document.getElementById('notification');
+            notification.classList.add('show');
+            document.getElementById('notification-text').textContent = translations[document.documentElement.lang]['notification-text'];
+            
+            // Ocultar notificación después de 3 segundos
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        });
+
+        // Mostrar notificación al descargar el curriculum
+        document.getElementById('cv-download-link').addEventListener('click', function() {
+            const notification = document.getElementById('notification');
+            document.getElementById('notification-text').textContent = translations[document.documentElement.lang]['notification-cv-text'];
             notification.classList.add('show');
             
             // Ocultar notificación después de 3 segundos
@@ -1591,6 +1646,9 @@
             const savedLang = localStorage.getItem('preferredLanguage');
             if (savedLang) {
                 setLanguage(savedLang);
+            } else {
+                // Inicializar el enlace del curriculum al español por defecto
+                document.getElementById('cv-download-link').href = 'assets/DHP-Curriculum-es.pdf';
             }
         });
         
@@ -1604,4 +1662,3 @@
         });
     </script>
 </body>
-</html>
