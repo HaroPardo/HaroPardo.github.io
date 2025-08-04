@@ -1,37 +1,38 @@
-# 🚀 Portafolio Profesional - David Haro Pardo
+# 🚀 Professional Portfolio – David Haro Pardo
 
-![GitHub last commit](https://img.shields.io/github/last-commit/HaroPardo/HaroPardo.github.io)
-![GitHub repo size](https://img.shields.io/github/repo-size/HaroPardo/HaroPardo.github.io)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
+![GitHub last commit](https://img.shields.io/github/last-commit/HaroPardo/HaroPardo.github.io)  
+![GitHub repo size](https://img.shields.io/github/repo-size/HaroPardo/HaroPardo.github.io)  
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)  
 
-Bienvenido a mi portafolio profesional! Un sitio web moderno y responsive que muestra mis habilidades, proyectos y experiencia como desarrollador Full Stack.
+Welcome to my professional portfolio! A modern, responsive website showcasing my skills, projects, and experience as a Full Stack developer.
 
-**Visita el sitio en vivo:**  
+**Visit the live site:**  
 [https://haropardo.github.io](https://haropardo.github.io)
 
-## ✨ Características Principales
+## ✨ Key Features
 
-- **Sistema Multidioma** - Soporte completo para Español e Inglés
-- **Efectos Visuales Avanzados** - Animaciones CSS, gradientes y efectos de transición
-- **Secciones Destacadas**:
-  - Presentación profesional con efecto hero
-  - Galería de proyectos interactiva
-  - Habilidades técnicas organizadas por categorías
-  - Sistema de contacto con copiado automático de email
-- **Modales Explicativos** - Detalles técnicos de cada proyecto
-- **Navegación Inteligente** - Smooth scrolling y menú adaptable
+- **Multilanguage System** – Full support for Spanish and English  
+- **Advanced Visual Effects** – CSS animations, gradients, and transition effects  
+- **Highlighted Sections**:  
+  - Professional introduction with hero effect  
+  - Interactive project gallery  
+  - Technical skills organized by category  
+  - Contact system with automatic email copying  
+- **Explanatory Modals** – Technical details for each project  
+- **Smart Navigation** – Smooth scrolling and adaptive menu  
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat&logo=github&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)  
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat&logo=github&logoColor=white)  
 
 ```mermaid
 graph LR
-A[HTML5] --> B(CSS3 Moderno)
+A[HTML5] --> B(Modern CSS3)
 B --> C(JavaScript ES6)
-C --> D[Animaciones CSS]
+C --> D[CSS Animations]
 D --> E[Responsive Design]
 E --> F[GitHub Pages]
+
