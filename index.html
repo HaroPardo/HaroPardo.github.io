@@ -326,7 +326,6 @@
 
         .project-img {
             height: 200px;
-            background: rgba(67, 97, 238, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -785,20 +784,6 @@
             animation-delay: 0.6s;
         }
 
-        /* Estilo adicional para el carnet */
-        .license-badge {
-            background: rgba(76, 201, 240, 0.15);
-            border: 1px solid rgba(76, 201, 240, 0.3);
-            color: var(--success);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 5px;
-        }
-
         @media (max-width: 992px) {
             h1 {
                 font-size: 3.5rem;
@@ -957,7 +942,36 @@
             </div>
             
             <div class="projects-grid">
+                <!-- Nuevo proyecto WhatsApp Extension -->
                 <div class="project-card fade-in">
+                    <div class="project-img" style="background: rgba(37, 211, 102, 0.1);">
+                        <i class="fab fa-whatsapp" style="color: #25D366; font-size: 4rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 id="project-4-title">WhatsApp Extension</h3>
+                        <p id="project-4-description">Aplicación de escritorio para acceder a WhatsApp Web sin instalar WhatsApp Desktop, con más libertades y funcionalidades.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Electron</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">CommonJS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HaroPardo/Whatsapp-app-extension" target="_blank" class="btn btn-outline code-btn" id="project-4-code-btn">
+                                <i class="fab fa-github"></i> <span>Código</span>
+                            </a>
+                            <!-- Cambio aquí: Ver Video por Ver Imágenes con descarga de screenshots -->
+                            <a href="assets/screenshots-of-app.zip" download="screenshots-whatsapp.zip" class="btn" id="project-4-images-btn">
+                                <i class="fas fa-images"></i> <span>Ver Imágenes</span>
+                            </a>
+                            <a href="#" class="btn btn-outline open-modal" data-modal="whatsapp-modal" id="project-4-details-btn">Explicación Detallada</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto CRM -->
+                <div class="project-card fade-in delay-1">
                     <div class="project-img">
                         <i class="fas fa-chart-line"></i>
                     </div>
@@ -981,7 +995,8 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in delay-1">
+                <!-- Proyecto App de Adopción de Gatos -->
+                <div class="project-card fade-in delay-2">
                     <div class="project-img">
                         <i class="fas fa-cat"></i>
                     </div>
@@ -1004,7 +1019,8 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in delay-2">
+                <!-- Proyecto API de Películas -->
+                <div class="project-card fade-in delay-3">
                     <div class="project-img">
                         <i class="fas fa-film"></i>
                     </div>
@@ -1056,6 +1072,7 @@
                         <i class="fas fa-window-maximize"></i>
                         <span>JavaFX</span>
                     </div>
+                    <!-- Añadido Electron aquí -->
                 </div>
                 
                 <div class="skill-category fade-in delay-1">
@@ -1112,10 +1129,6 @@
                         <i class="fas fa-terminal"></i>
                         <span>CLI</span>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-id-card"></i>
-                        <span>Licencia de conducir</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1155,19 +1168,6 @@
                             <div>
                                 <h4 id="contact-phone-label">Teléfono</h4>
                                 <p>+34 649845932</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Carnet de conducir añadido aquí -->
-                        <div class="contact-item">
-                            <i class="fas fa-car"></i>
-                            <div>
-                                <h4 id="contact-license-label">Carnet de conducir</h4>
-                                <p id="contact-license-value">Permiso B</p>
-                                <div class="license-badge">
-                                    <i class="fas fa-id-card"></i>
-                                    <span id="license-badge-text">Categoría B</span>
-                                </div>
                             </div>
                         </div>
                         
@@ -1219,6 +1219,33 @@
     </div>
 
     <!-- Modales para explicaciones detalladas -->
+    <!-- Modal para WhatsApp Extension -->
+    <div id="whatsapp-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-whatsapp-title">WhatsApp Extension</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-section">
+                    <h3 id="whatsapp-modal-q1">¿Por qué lo creé?</h3>
+                    <p id="whatsapp-modal-a1">Al cambiar de navegador web a uno que se me recomendaba por ser más rápido noté rápidamente que no había ningún tipo de extensión de navegador para acceder a WhatsApp, siendo la única manera teniéndolo en una pestaña. Así que se me ocurrió no solo que sea para un navegador, sino que lo puedas tener siempre abierto, ideal para trabajar para poder pasar archivos del móvil al ordenador y viceversa o incluso para mero ocio.</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3 id="whatsapp-modal-q2">¿Qué aprendí de este proyecto?</h3>
+                    <p id="whatsapp-modal-a2">Aprendí a usar el framework Electron y a usar CommonJS, además de elementos que ya había usado como CSS, JavaScript o HTML. Tuve nuevos retos con ellos aprendiendo a usarlos en aplicación de escritorio, ya que su uso anterior a excepción de CSS fue exclusivamente en páginas web.</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3 id="whatsapp-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
+                    <p id="whatsapp-modal-a3">Sí, además, tengo pensado seguir sacando actualizaciones en esta aplicación hasta poder perfeccionarla e intentar añadir más funcionalidades.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para CRM -->
     <div id="crm-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1244,6 +1271,7 @@
         </div>
     </div>
 
+    <!-- Modal para App de Gatos -->
     <div id="cats-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1269,6 +1297,7 @@
         </div>
     </div>
 
+    <!-- Modal para API de Películas -->
     <div id="movie-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1325,6 +1354,11 @@
                 "project-3-download-btn": "Descargar Tablas",
                 "project-3-details-btn": "Explicación Detallada",
                 "project-3-code-btn": "Ver código",
+                "project-4-title": "WhatsApp Extension",
+                "project-4-description": "Aplicación de escritorio para acceder a WhatsApp Web sin instalar WhatsApp Desktop, con más libertades y funcionalidades.",
+                "project-4-code-btn": "Código",
+                "project-4-images-btn": "Ver Imágenes",  // Cambiado de video a imágenes
+                "project-4-details-btn": "Explicación Detallada",
                 
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que he usado",
@@ -1340,9 +1374,6 @@
                 "contact-email-label": "Correo Electrónico",
                 "contact-location-label": "Ubicación",
                 "contact-phone-label": "Teléfono",
-                "contact-license-label": "Carnet de conducir",
-                "contact-license-value": "Permiso B",
-                "license-badge-text": "Categoría B",
                 "direct-email-title": "Contactar por Correo",
                 "direct-email-description": "Haz clic en el botón para copiar mi dirección de correo al portapapeles:",
                 "copy-email-text": "Copiar Correo al Portapapeles",
@@ -1376,7 +1407,15 @@
                 "movie-modal-q2": "¿Qué aprendí de este proyecto?",
                 "movie-modal-a2": "Consolidé mi comprensión de las diferencias entre operaciones REST y CRUD, dominé el diseño avanzado de esquemas relacionales y adquirí experiencia práctica en administración de bases de datos. Este proyecto complementó mi experiencia previa con MongoDB profundizando en sistemas SQL tradicionales.",
                 "movie-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
-                "movie-modal-a3": "Sí, las bases de datos son componentes críticos en cualquier sistema moderno. Estoy comprometido a seguir especializándome en este campo, particularmente en optimización de consultas, diseño de esquemas escalables e implementación en la nube."
+                "movie-modal-a3": "Sí, las bases de datos son componentes críticos en cualquier sistema moderno. Estoy comprometido a seguir especializándome en este campo, particularmente en optimización de consultas, diseño de esquemas escalables e implementación en la nube.",
+                
+                "modal-whatsapp-title": "WhatsApp Extension",
+                "whatsapp-modal-q1": "¿Por qué lo creé?",
+                "whatsapp-modal-a1": "Al cambiar de navegador web a uno que se me recomendaba por ser más rápido noté rápidamente que no había ningún tipo de extensión de navegador para acceder a WhatsApp, siendo la única manera teniéndolo en una pestaña. Así que se me ocurrió no solo que sea para un navegador, sino que lo puedas tener siempre abierto, ideal para trabajar para poder pasar archivos del móvil al ordenador y viceversa o incluso para mero ocio.",
+                "whatsapp-modal-q2": "¿Qué aprendí de este proyecto?",
+                "whatsapp-modal-a2": "Aprendí a usar el framework Electron y a usar CommonJS, además de elementos que ya había usado como CSS, JavaScript o HTML. Tuve nuevos retos con ellos aprendiendo a usarlos en aplicación de escritorio, ya que su uso anterior a excepción de CSS fue exclusivamente en páginas web.",
+                "whatsapp-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
+                "whatsapp-modal-a3": "Sí, además, tengo pensado seguir sacando actualizaciones en esta aplicación hasta poder perfeccionarla e intentar añadir más funcionalidades."
             },
             en: {
                 "nav-home": "Home",
@@ -1407,6 +1446,11 @@
                 "project-3-download-btn": "Download Tables",
                 "project-3-details-btn": "Detailed Explanation",
                 "project-3-code-btn": "View Code",
+                "project-4-title": "WhatsApp Extension",
+                "project-4-description": "Desktop application to access WhatsApp Web without installing WhatsApp Desktop, with more freedom and features.",
+                "project-4-code-btn": "Code",
+                "project-4-images-btn": "View Images",  // Changed from video to images
+                "project-4-details-btn": "Detailed Explanation",
                 
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I have used",
@@ -1422,9 +1466,6 @@
                 "contact-email-label": "Email",
                 "contact-location-label": "Location",
                 "contact-phone-label": "Phone",
-                "contact-license-label": "Driving license",
-                "contact-license-value": "Category B",
-                "license-badge-text": "Category B",
                 "direct-email-title": "Contact by Email",
                 "direct-email-description": "Click the button to copy my email address to clipboard:",
                 "copy-email-text": "Copy Email to Clipboard",
@@ -1457,7 +1498,15 @@
                 "movie-modal-q2": "What did I learn from this project?",
                 "movie-modal-a2": "I consolidated my understanding of the differences between REST and CRUD operations, have learn some advanced relational schema design, and gained practical experience in database administration. This project complemented my previous experience with MongoDB by delving into traditional SQL systems.",
                 "movie-modal-q3": "Would you like to continue working on similar projects?",
-                "movie-modal-a3": "Yes, databases are critical components in any modern system. I'm committed to continuing to specialize in this field, particularly in query optimization, scalable schema design, and cloud implementation."
+                "movie-modal-a3": "Yes, databases are critical components in any modern system. I'm committed to continuing to specialize in this field, particularly in query optimization, scalable schema design, and cloud implementation.",
+                
+                "modal-whatsapp-title": "WhatsApp Extension",
+                "whatsapp-modal-q1": "Why did I create it?",
+                "whatsapp-modal-a1": "When switching to a recommended faster web browser, I quickly noticed there were no browser extensions to access WhatsApp, the only way being keeping it in a tab. So I came up with the idea of not just making it for a browser, but having it always open, ideal for work to transfer files between mobile and computer or even for leisure.",
+                "whatsapp-modal-q2": "What did I learn from this project?",
+                "whatsapp-modal-a2": "I learned to use the Electron framework and CommonJS, in addition to elements I had used before like CSS, JavaScript and HTML. I faced new challenges learning to use them in a desktop application, as my previous experience (except for CSS) was exclusively with web pages.",
+                "whatsapp-modal-q3": "Would you like to continue working on similar projects?",
+                "whatsapp-modal-a3": "Yes, and I plan to continue releasing updates for this application to perfect it and add more functionality."
             }
         };
 
