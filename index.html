@@ -6,6 +6,7 @@
     <title>David Haro Pardo - Portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Estilos existentes (se mantienen igual) */
         :root {
             --primary: #4361ee;
             --secondary: #3f37c9;
@@ -706,7 +707,7 @@
             display: flex;
             gap: 10px;
         }
-        
+
         .lang-btn {
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -717,11 +718,11 @@
             font-weight: 600;
             transition: all 0.3s ease;
         }
-        
+
         .lang-btn:hover {
             background: var(--primary);
         }
-        
+
         .lang-btn.active {
             background: var(--primary);
             border-color: var(--primary);
@@ -733,7 +734,7 @@
             border: 1px solid rgba(76, 201, 240, 0.3);
             color: var(--success);
         }
-        
+
         .code-btn:hover {
             background: var(--success);
             color: white;
@@ -748,7 +749,7 @@
             border-radius: var(--border-radius);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .cv-download .btn {
             display: inline-flex;
             align-items: center;
@@ -757,7 +758,7 @@
             padding: 15px 30px;
             margin-top: 10px;
         }
-        
+
         .cv-download i {
             font-size: 1.5rem;
         }
@@ -788,7 +789,7 @@
             h1 {
                 font-size: 3.5rem;
             }
-            
+
             h2 {
                 font-size: 2.5rem;
             }
@@ -798,7 +799,7 @@
             .hamburger {
                 display: block;
             }
-            
+
             .nav-links {
                 position: fixed;
                 top: 80px;
@@ -812,24 +813,24 @@
                 transition: var(--transition);
                 box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
             }
-            
+
             .nav-links.active {
                 right: 0;
             }
-            
+
             .nav-links li {
                 margin: 0 0 20px 0;
             }
-            
+
             .hero-btns {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .hero::before, .hero::after {
                 display: none;
             }
-            
+
             .modal-content {
                 margin: 20px auto;
             }
@@ -838,16 +839,16 @@
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-            
+
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .language-switcher {
                 top: 15px;
                 left: 15px;
             }
-            
+
             .project-links {
                 flex-direction: column;
             }
@@ -857,32 +858,32 @@
             h1 {
                 font-size: 2.8rem;
             }
-            
+
             h2 {
                 font-size: 2rem;
             }
-            
+
             .hero {
                 height: auto;
                 padding: 150px 0 80px;
             }
-            
+
             .modal-header {
                 padding: 15px;
             }
-            
+
             .modal-body {
                 padding: 20px;
             }
-            
+
             .hero p {
                 font-size: 1.2rem;
             }
-            
+
             .section-title p {
                 font-size: 1.2rem;
             }
-            
+
             .lang-btn {
                 padding: 6px 12px;
                 font-size: 0.9rem;
@@ -940,9 +941,37 @@
                 <h2 id="projects-title">Mis Proyectos</h2>
                 <p id="projects-subtitle">Explora mis últimos trabajos y proyectos personales</p>
             </div>
-            
+
             <div class="projects-grid">
-                <!-- Nuevo proyecto WhatsApp Extension -->
+                <!-- Nuevo proyecto: Android App -->
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: rgba(61, 220, 132, 0.1);">
+                        <i class="fab fa-android" style="color: #3DDC84; font-size: 4rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 id="project-5-title">Aplicación Android</h3>
+                        <p id="project-5-description">Aplicación móvil desarrollada en Android Studio con funcionalidades avanzadas como mapas, gestión de datos local y consumo de APIs.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Android Studio</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">XML</span>
+                            <span class="tech-badge">OSMDroid</span>
+                            <span class="tech-badge">Picasso</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HaroPardo/AndroidApp" target="_blank" class="btn btn-outline code-btn" id="project-5-code-btn">
+                                <i class="fab fa-github"></i> <span>Ver código</span>
+                            </a>
+                            <a href="https://www.amazon.com/gp/product/B0FNKKWS2H" target="_blank" class="btn" id="project-5-store-btn">
+                                <i class="fab fa-amazon"></i> <span>Amazon Store</span>
+                            </a>
+                            <a href="#" class="btn btn-outline open-modal" data-modal="android-modal" id="project-5-details-btn">Explicación Detallada</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto WhatsApp Extension -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(37, 211, 102, 0.1);">
                         <i class="fab fa-whatsapp" style="color: #25D366; font-size: 4rem;"></i>
@@ -961,7 +990,6 @@
                             <a href="https://github.com/HaroPardo/Whatsapp-app-extension" target="_blank" class="btn btn-outline code-btn" id="project-4-code-btn">
                                 <i class="fab fa-github"></i> <span>Código</span>
                             </a>
-                            <!-- Cambio aquí: Ver Video por Ver Imágenes con descarga de screenshots -->
                             <a href="assets/screenshots-of-app.zip" download="screenshots-whatsapp.zip" class="btn" id="project-4-images-btn">
                                 <i class="fas fa-images"></i> <span>Ver Imágenes</span>
                             </a>
@@ -1052,7 +1080,7 @@
                 <h2 id="skills-title">Mis Habilidades</h2>
                 <p id="skills-subtitle">Tecnologías y herramientas que he usado</p>
             </div>
-            
+
             <div class="skills-grid">
                 <div class="skill-category fade-in">
                     <h3 id="skills-frontend-title">Frontend</h3>
@@ -1074,7 +1102,7 @@
                     </div>
                     <!-- Añadido Electron aquí -->
                 </div>
-                
+
                 <div class="skill-category fade-in delay-1">
                     <h3 id="skills-backend-title">Backend</h3>
                     <div class="skill-item">
@@ -1094,7 +1122,7 @@
                         <span>Spring Boot</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category fade-in delay-2">
                     <h3 id="skills-db-title">Bases de Datos</h3>
                     <div class="skill-item">
@@ -1114,7 +1142,7 @@
                         <span>SQLite</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category fade-in delay-3">
                     <h3 id="skills-tools-title">Herramientas</h3>
                     <div class="skill-item">
@@ -1140,12 +1168,12 @@
                 <h2 id="contact-title">Contacto</h2>
                 <p id="contact-subtitle">¿Interesado en trabajar juntos? ¡Contáctame!</p>
             </div>
-            
+
             <div class="contact-grid">
                 <div class="contact-info fade-in">
                     <h3 id="contact-info-title">Información de Contacto</h3>
                     <p id="contact-info-description">No dudes en contactarme para oportunidades laborales, colaboraciones o cualquier consulta.</p>
-                    
+
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -1154,7 +1182,7 @@
                                 <p>dharopardo@gmail.com</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
@@ -1162,7 +1190,7 @@
                                 <p>Zaragoza, España</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
@@ -1170,7 +1198,7 @@
                                 <p>+34 649845932</p>
                             </div>
                         </div>
-                        
+
                         <!-- Curriculum -->
                         <div class="cv-download">
                             <h4 id="cv-download-title">Mira mi Curriculum</h4>
@@ -1181,16 +1209,16 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="direct-email fade-in delay-1">
                     <h3 id="direct-email-title">Contactar por Correo</h3>
                     <p id="direct-email-description">Haz clic en el botón para copiar mi dirección de correo al portapapeles:</p>
-                    
+
                     <div class="email-display">
                         <i class="fas fa-envelope"></i>
                         dharopardo@gmail.com
                     </div>
-                    
+
                     <button id="copy-email-btn" class="btn email-btn">
                         <i class="fas fa-copy"></i> <span id="copy-email-text">Copiar Correo al Portapapeles</span>
                     </button>
@@ -1212,6 +1240,32 @@
     </div>
 
     <!-- Modales para explicaciones detalladas -->
+    <!-- Modal para Aplicación Android -->
+    <div id="android-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-android-title">Aplicación Android</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-section">
+                    <h3 id="android-modal-q1">¿Por qué lo creé?</h3>
+                    <p id="android-modal-a1">Siempre he tenido un gran interés en el desarrollo de aplicaciones para Android, dado que son herramientas que utilizamos diariamente. Decidí embarcarme en este proyecto para crear una aplicación útil que pudiera integrarse en la rutina cotidiana, aprovechando la oportunidad para explorar el ecosistema móvil.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="android-modal-q2">¿Qué aprendí de este proyecto?</h3>
+                    <p id="android-modal-a2">Aunque ya contaba con experiencia en Java, descubrí que el desarrollo en Android Studio presenta un entorno y configuración únicos. Logré adaptarme y dominar aspectos clave como la integración de APIs de Google, gestión de bases de datos SQLite, y el uso de librerías como OSMDroid para mapas y Picasso para la carga de imágenes.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="android-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
+                    <p id="android-modal-a3">Definitivamente. Este proyecto ha despertado mi interés en el desarrollo móvil, y estoy ansioso por seguir explorando las particularidades y capacidades únicas que ofrece la plataforma Android, así como las diferencias arquitectónicas y de UX respecto al desarrollo web y de escritorio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal para WhatsApp Extension -->
     <div id="whatsapp-modal" class="modal">
         <div class="modal-content">
@@ -1224,12 +1278,12 @@
                     <h3 id="whatsapp-modal-q1">¿Por qué lo creé?</h3>
                     <p id="whatsapp-modal-a1">Al cambiar de navegador web a uno que se me recomendaba por ser más rápido noté rápidamente que no había ningún tipo de extensión de navegador para acceder a WhatsApp, siendo la única manera teniéndolo en una pestaña. Así que se me ocurrió no solo que sea para un navegador, sino que lo puedas tener siempre abierto, ideal para trabajar para poder pasar archivos del móvil al ordenador y viceversa o incluso para mero ocio.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="whatsapp-modal-q2">¿Qué aprendí de este proyecto?</h3>
                     <p id="whatsapp-modal-a2">Aprendí a usar el framework Electron y a usar CommonJS, además de elementos que ya había usado como CSS, JavaScript o HTML. Tuve nuevos retos con ellos aprendiendo a usarlos en aplicación de escritorio, ya que su uso anterior a excepción de CSS fue exclusivamente en páginas web.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="whatsapp-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
                     <p id="whatsapp-modal-a3">Sí, además, tengo pensado seguir sacando actualizaciones en esta aplicación hasta poder perfeccionarla e intentar añadir más funcionalidades.</p>
@@ -1250,12 +1304,12 @@
                     <h3 id="crm-modal-q1">¿Por qué lo creé?</h3>
                     <p id="crm-modal-a1">Desarrollé este sistema CRM como un proyecto completo para aplicar y ampliar mis conocimientos en desarrollo web. Mi objetivo era crear una solución práctica que pudiera implementarse en entornos empresariales reales para optimizar la gestión de relaciones con clientes, consolidando al mismo tiempo mi dominio de las tecnologías fundamentales de frontend y backend.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="crm-modal-q2">¿Qué aprendí de este proyecto?</h3>
                     <p id="crm-modal-a2">Este proyecto me permitió profundizar mis habilidades de integración backend usando PHP y phpMyAdmin, reforzando mis capacidades de diseño de interfaces con HTML y CSS. Aprendí a crear sistemas completos que requieren gestión de bases de datos y experiencias de usuario funcionales y atractivas.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="crm-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
                     <p id="crm-modal-a3">Absolutamente. Este tipo de proyectos me permite combinar creatividad con funcionalidad, y estoy entusiasmado por seguir desarrollando soluciones que resuelvan problemas reales mientras perfecciono mis habilidades técnicas.</p>
@@ -1276,12 +1330,12 @@
                     <h3 id="cats-modal-q1">¿Por qué lo creé?</h3>
                     <p id="cats-modal-a1">Concebí esta aplicación de escritorio como mi primer gran proyecto, con el objetivo de crear una herramienta integral para gestionar adopciones de gatos. Quería demostrar mi capacidad para integrar diversas tecnologías y resolver desafíos complejos, desde conectar con bases de datos NoSQL (usando MongoDB) hasta diseñar interfaces avanzadas con JavaFX.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="cats-modal-q2">¿Qué aprendí de este proyecto?</h3>
                     <p id="cats-modal-a2">Esta experiencia validó mi pasión por transformar ideas complejas en software funcional. Técnicamente, dominé el desarrollo de interfaces dinámicas con FXML, implementé sistemas de mensajería y gestioné contenido multimedia mediante codificación Base64. El aprendizaje más significativo fue confirmar que con dedicación e investigación puedo resolver cualquier desafío técnico.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="cats-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
                     <p id="cats-modal-a3">Definitivamente. Los proyectos complejos que requieren meses de desarrollo ofrecen el mayor crecimiento profesional. Estoy entusiasmado por seguir explorando el potencial de Java y otras tecnologías para crear soluciones robustas con impacto positivo.</p>
@@ -1302,12 +1356,12 @@
                     <h3 id="movie-modal-q1">¿Por qué lo creé?</h3>
                     <p id="movie-modal-a1">Desarrollé esta API REST como plataforma para profundizar en la gestión profesional de bases de datos SQL. Partiendo del concepto simple de un repositorio de películas, expandí el proyecto para explorar migraciones entre sistemas de gestión de bases de datos (de MySQL a PostgreSQL) y su implementación en entornos en la nube como Azure.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="movie-modal-q2">¿Qué aprendí de este proyecto?</h3>
                     <p id="movie-modal-a2">Consolidé mi comprensión de las diferencias entre operaciones REST y CRUD, dominé el diseño avanzado de esquemas relacionales y adquirí experiencia práctica en administración de bases de datos. Este proyecto complementó mi experiencia previa con MongoDB profundizando en sistemas SQL tradicionales.</p>
                 </div>
-                
+
                 <div class="detail-section">
                     <h3 id="movie-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
                     <p id="movie-modal-a3">Sí, las bases de datos son componentes críticos en cualquier sistema moderno. Estoy comprometido a seguir especializándome en este campo, particularmente en optimización de consultas, diseño de esquemas escalables e implementación en la nube.</p>
@@ -1323,13 +1377,13 @@
                 "nav-projects": "Proyectos",
                 "nav-skills": "Habilidades",
                 "nav-contact": "Contacto",
-                
+
                 "hero-title": "Hola, soy David",
                 "hero-subtitle": "Desarrollador Full Stack",
                 "hero-description": "Creo soluciones digitales robustas utilizando las últimas tecnologías. Especializado en desarrollo web, aplicaciones de escritorio y bases de datos.",
                 "hero-projects-btn": "Ver mis proyectos",
                 "hero-contact-btn": "Contáctame",
-                
+
                 "projects-title": "Mis Proyectos",
                 "projects-subtitle": "Explora mis últimos trabajos y proyectos personales",
                 "project-1-title": "Sistema CRM",
@@ -1350,16 +1404,21 @@
                 "project-4-title": "WhatsApp Extension",
                 "project-4-description": "Aplicación de escritorio para acceder a WhatsApp Web sin instalar WhatsApp Desktop, con más libertades y funcionalidades.",
                 "project-4-code-btn": "Código",
-                "project-4-images-btn": "Ver Imágenes",  // Cambiado de video a imágenes
+                "project-4-images-btn": "Ver Imágenes",
                 "project-4-details-btn": "Explicación Detallada",
-                
+                "project-5-title": "Aplicación Android",
+                "project-5-description": "Aplicación móvil desarrollada en Android Studio con funcionalidades avanzadas como mapas, gestión de datos local y consumo de APIs.",
+                "project-5-code-btn": "Ver código",
+                "project-5-store-btn": "Amazon Store",
+                "project-5-details-btn": "Explicación Detallada",
+
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que he usado",
                 "skills-frontend-title": "Frontend",
                 "skills-backend-title": "Backend",
                 "skills-db-title": "Bases de Datos",
                 "skills-tools-title": "Herramientas",
-                
+
                 "contact-title": "Contacto",
                 "contact-subtitle": "¿Interesado en trabajar juntos? ¡Contáctame!",
                 "contact-info-title": "Información de Contacto",
@@ -1374,9 +1433,16 @@
                 "cv-download-title": "Mira mi Curriculum",
                 "cv-download-text": "Ver Curriculum (ES)",
                 "notification-cv-text": "¡Curriculum abierto con éxito!",
-                
+
                 "footer-text": "Diseñado y desarrollado por David Haro Pardo",
-                
+
+                "modal-android-title": "Aplicación Android",
+                "android-modal-q1": "¿Por qué lo creé?",
+                "android-modal-a1": "Siempre he tenido un gran interés en el desarrollo de aplicaciones para Android, dado que son herramientas que utilizamos diariamente. Decidí embarcarme en este proyecto para crear una aplicación útil que pudiera integrarse en la rutina cotidiana, aprovechando la oportunidad para explorar el ecosistema móvil.",
+                "android-modal-q2": "¿Qué aprendí de este proyecto?",
+                "android-modal-a2": "Aunque ya contaba con experiencia en Java, descubrí que el desarrollo en Android Studio presenta un entorno y configuración únicos. Logré adaptarme y dominar aspectos clave como la integración de APIs de Google, gestión de bases de datos SQLite, y el uso de librerías como OSMDroid para mapas y Picasso para la carga de imágenes.",
+                "android-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
+                "android-modal-a3": "Definitivamente. Este proyecto ha despertado my interés en el desarrollo móvil, y estoy ansioso por seguir explorando las particularidades y capacidades únicas que ofrece la plataforma Android, así como las diferencias arquitectónicas y de UX respecto al desarrollo web y de escritorio.",
 
                 "modal-crm-title": "Sistema CRM",
                 "crm-modal-q1": "¿Por qué lo creé?",
@@ -1385,15 +1451,15 @@
                 "crm-modal-a2": "Este proyecto me permitió profundizar mis habilidades de integración backend usando PHP y phpMyAdmin, reforzando mis capacidades de diseño de interfaces con HTML y CSS. Aprendí a crear sistemas completos que requieren gestión de bases de datos y experiencias de usuario funcionales y atractivas.",
                 "crm-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
                 "crm-modal-a3": "Absolutamente. Este tipo de proyectos me permite combinar creatividad con funcionalidad, y estoy entusiasmado por seguir desarrollando soluciones que resuelvan problemas reales mientras perfecciono mis habilidades técnicas.",
-                
+
                 "modal-cats-title": "App de Adopción de Gatos",
                 "cats-modal-q1": "¿Por qué lo creé?",
                 "cats-modal-a1": "Concebí esta aplicación de escritorio como mi primer gran proyecto, con el objetivo de crear una herramienta integral para gestionar adopciones de gatos. Quería demostrar mi capacidad para integrar diversas tecnologías y resolver desafíos complejos, desde conectar con bases de datos NoSQL (usando MongoDB) hasta diseñar interfaces avanzadas con JavaFX.",
                 "cats-modal-q2": "¿Qué aprendí de este proyecto?",
                 "cats-modal-a2": "Esta experiencia validó mi pasión por transformar ideas complejas en software funcional. Técnicamente, dominé el desarrollo de interfaces dinámicas con FXML, implementé sistemas de mensajería y gestioné contenido multimedia mediante codificación Base64. El aprendizaje más significativo fue confirmar que con dedicación e investigación puedo resolver cualquier desafío técnico.",
                 "cats-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
-                "cats-modal-a3": "Definitivamente. Los proyectos complejos que requieren meses de desarrollo ofrecen el mayor crecimiento profesional. Estoy entusiasmado por seguir explorando el potencial de Java y otras tecnologías para crear soluciones robustas con impacto positivo.",
-                
+                "cats-modal-a3": "Definitivamente. Los proyectos complejos que requieren meses de desarrollo offrecen el mayor crecimiento profesional. Estoy entusiasmado por seguir explorando el potencial de Java y otras tecnologías para crear soluciones robustas con impacto positivo.",
+
                 "modal-movie-title": "API de Base de Datos de Películas",
                 "movie-modal-q1": "¿Por qué lo creé?",
                 "movie-modal-a1": "Desarrollé esta API REST como plataforma para profundizar en la gestión profesional de bases de datos SQL. Partiendo del concepto simple de un repositorio de películas, expandí el proyecto para explorar migraciones entre sistemas de gestión de bases de datos (de MySQL a PostgreSQL) y su implementación en entornos en la nube como Azure.",
@@ -1401,12 +1467,12 @@
                 "movie-modal-a2": "Consolidé mi comprensión de las diferencias entre operaciones REST y CRUD, dominé el diseño avanzado de esquemas relacionales y adquirí experiencia práctica en administración de bases de datos. Este proyecto complementó mi experiencia previa con MongoDB profundizando en sistemas SQL tradicionales.",
                 "movie-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
                 "movie-modal-a3": "Sí, las bases de datos son componentes críticos en cualquier sistema moderno. Estoy comprometido a seguir especializándome en este campo, particularmente en optimización de consultas, diseño de esquemas escalables e implementación en la nube.",
-                
+
                 "modal-whatsapp-title": "WhatsApp Extension",
                 "whatsapp-modal-q1": "¿Por qué lo creé?",
                 "whatsapp-modal-a1": "Al cambiar de navegador web a uno que se me recomendaba por ser más rápido noté rápidamente que no había ningún tipo de extensión de navegador para acceder a WhatsApp, siendo la única manera teniéndolo en una pestaña. Así que se me ocurrió no solo que sea para un navegador, sino que lo puedas tener siempre abierto, ideal para trabajar para poder pasar archivos del móvil al ordenador y viceversa o incluso para mero ocio.",
                 "whatsapp-modal-q2": "¿Qué aprendí de este proyecto?",
-                "whatsapp-modal-a2": "Aprendí a usar el framework Electron y a usar CommonJS, además de elementos que ya había usado como CSS, JavaScript o HTML. Tuve nuevos retos con ellos aprendiendo a usarlos en aplicación de escritorio, ya que su uso anterior a excepción de CSS fue exclusivamente en páginas web.",
+                "whatsapp-modal-a2": "Aprendí a usar el framework Electron and a usar CommonJS, además de elementos que ya había usado como CSS, JavaScript o HTML. Tuve nuevos retos con ellos aprendiendo a usarlos en aplicación de escritorio, ya que su uso anterior a excepción de CSS fue exclusivamente en páginas web.",
                 "whatsapp-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
                 "whatsapp-modal-a3": "Sí, además, tengo pensado seguir sacando actualizaciones en esta aplicación hasta poder perfeccionarla e intentar añadir más funcionalidades."
             },
@@ -1415,13 +1481,13 @@
                 "nav-projects": "Projects",
                 "nav-skills": "Skills",
                 "nav-contact": "Contact",
-                
+
                 "hero-title": "Hello, I'm David",
                 "hero-subtitle": "Full Stack Developer",
                 "hero-description": "I create robust digital solutions using the latest technologies. Specializing in web development, desktop applications and databases.",
                 "hero-projects-btn": "View my projects",
                 "hero-contact-btn": "Contact me",
-                
+
                 "projects-title": "My Projects",
                 "projects-subtitle": "Explore my latest work and personal projects",
                 "project-1-title": "CRM System",
@@ -1442,16 +1508,21 @@
                 "project-4-title": "WhatsApp Extension",
                 "project-4-description": "Desktop application to access WhatsApp Web without installing WhatsApp Desktop, with more freedom and features.",
                 "project-4-code-btn": "Code",
-                "project-4-images-btn": "View Images",  // Changed from video to images
+                "project-4-images-btn": "View Images",
                 "project-4-details-btn": "Detailed Explanation",
-                
+                "project-5-title": "Android Application",
+                "project-5-description": "Mobile application developed in Android Studio with advanced features such as maps, local data management and API consumption.",
+                "project-5-code-btn": "View Code",
+                "project-5-store-btn": "Amazon Store",
+                "project-5-details-btn": "Detailed Explanation",
+
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I have used",
                 "skills-frontend-title": "Frontend",
                 "skills-backend-title": "Backend",
                 "skills-db-title": "Databases",
                 "skills-tools-title": "Tools",
-                
+
                 "contact-title": "Contact",
                 "contact-subtitle": "Interested in working together? Contact me!",
                 "contact-info-title": "Contact Information",
@@ -1466,9 +1537,17 @@
                 "cv-download-title": "Watch my Resume",
                 "cv-download-text": "Watch Resume (EN)",
                 "notification-cv-text": "Resume opened successfully!",
-                
+
                 "footer-text": "Designed and developed by David Haro Pardo",
-                
+
+                "modal-android-title": "Android Application",
+                "android-modal-q1": "Why did I create it?",
+                "android-modal-a1": "I have always had a strong interest in Android application development, as they are tools we use daily. I decided to embark on this project to create a useful application that could integrate into everyday routine, taking the opportunity to explore the mobile ecosystem.",
+                "android-modal-q2": "What did I learn from this project?",
+                "android-modal-a2": "Although I already had experience in Java, I discovered that development in Android Studio presents a unique environment and configuration. I managed to adapt and master key aspects such as integration of Google APIs, SQLite database management, and the use of libraries like OSMDroid for maps and Picasso for image loading.",
+                "android-modal-q3": "Would you like to continue working on similar projects?",
+                "android-modal-a3": "Definitely. This project has sparked my interest in mobile development, and I am eager to continue exploring the particularities and unique capabilities offered by the Android platform, as well as the architectural and UX differences compared to web and desktop development.",
+
                 "modal-crm-title": "CRM System",
                 "crm-modal-q1": "Why did I create it?",
                 "crm-modal-a1": "I developed this CRM system as a comprehensive project to apply and expand my knowledge in web development. I aimed to create a practical solution that could be implemented in real business environments to optimize customer relationship management, while consolidating my skill of fundamental frontend and backend technologies.",
@@ -1476,7 +1555,7 @@
                 "crm-modal-a2": "This project allowed me to deepen my backend integration skills using PHP and phpMyAdmin, while reinforcing my interface design abilities with HTML and CSS. I learned to create complete systems requiring database management and functional, attractive user experiences.",
                 "crm-modal-q3": "Would you like to continue working on similar projects?",
                 "crm-modal-a3": "Absolutely. This type of project allows me to combine creativity with functionality, and I'm excited to continue developing solutions that solve real problems while perfecting my technical skills.",
-                
+
                 "modal-cats-title": "Cats Adoption App",
                 "cats-modal-q1": "Why did I create it?",
                 "cats-modal-a1": "I conceived this desktop application as my first major project, aiming to create a comprehensive tool for managing cat adoptions. I wanted to demonstrate my ability to integrate diverse technologies and solve complex challenges, from connecting with NoSQL databases (using MongoDB) to designing advanced interfaces with JavaFX.",
@@ -1484,7 +1563,7 @@
                 "cats-modal-a2": "This experience validated my passion for transforming complex ideas into functional software. Also I have learned about dynamic interface development with FXML, implemented messaging systems, and managed multimedia content through Base64 encoding. The most significant learning was confirming that with dedication and research, I can solve any technical challenge.",
                 "cats-modal-q3": "Would you like to continue working on similar projects?",
                 "cats-modal-a3": "Definitely. Complex projects requiring months of development offer the greatest professional growth. I'm excited to continue exploring the potential of Java and other technologies to create robust solutions with positive impact.",
-                
+
                 "modal-movie-title": "Movie Database API",
                 "movie-modal-q1": "Why did I create it?",
                 "movie-modal-a1": "I developed this REST API as a platform to deepen my professional management of SQL databases. Starting from a simple movie repository concept, I expanded the project to explore migrations between database management systems (MySQL to PostgreSQL) and their implementation in cloud environments like Azure.",
@@ -1492,7 +1571,7 @@
                 "movie-modal-a2": "I consolidated my understanding of the differences between REST and CRUD operations, have learn some advanced relational schema design, and gained practical experience in database administration. This project complemented my previous experience with MongoDB by delving into traditional SQL systems.",
                 "movie-modal-q3": "Would you like to continue working on similar projects?",
                 "movie-modal-a3": "Yes, databases are critical components in any modern system. I'm committed to continuing to specialize in this field, particularly in query optimization, scalable schema design, and cloud implementation.",
-                
+
                 "modal-whatsapp-title": "WhatsApp Extension",
                 "whatsapp-modal-q1": "Why did I create it?",
                 "whatsapp-modal-a1": "When switching to a recommended faster web browser, I quickly noticed there were no browser extensions to access WhatsApp, the only way being keeping it in a tab. So I came up with the idea of not just making it for a browser, but having it always open, ideal for work to transfer files between mobile and computer or even for leisure.",
@@ -1505,9 +1584,9 @@
 
         function setLanguage(lang) {
             document.documentElement.lang = lang;
-            
+
             const keys = Object.keys(translations[lang]);
-            
+
             keys.forEach(key => {
                 const elements = document.querySelectorAll(`[id="${key}"]`);
                 elements.forEach(element => {
@@ -1518,32 +1597,32 @@
                     }
                 });
             });
-            
+
             const cvLink = document.getElementById('cv-download-link');
             cvLink.href = `assets/DHP-Curriculum-${lang}.pdf`;
-            
+
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
             document.getElementById(`lang-${lang}`).classList.add('active');
-            
+
             localStorage.setItem('preferredLanguage', lang);
         }
 
         document.getElementById('copy-email-btn').addEventListener('click', function() {
             const email = 'dharopardo@gmail.com';
-            
+
             const tempInput = document.createElement('textarea');
             tempInput.value = email;
             document.body.appendChild(tempInput);
             tempInput.select();
             document.execCommand('copy');
             document.body.removeChild(tempInput);
-            
+
             const notification = document.getElementById('notification');
             notification.classList.add('show');
             document.getElementById('notification-text').textContent = translations[document.documentElement.lang]['notification-text'];
-            
+
             setTimeout(() => {
                 notification.classList.remove('show');
             }, 3000);
@@ -1553,7 +1632,7 @@
             const notification = document.getElementById('notification');
             document.getElementById('notification-text').textContent = translations[document.documentElement.lang]['notification-cv-text'];
             notification.classList.add('show');
-            
+
             setTimeout(() => {
                 notification.classList.remove('show');
             }, 3000);
@@ -1566,12 +1645,12 @@
             } else {
                 header.classList.remove('scrolled');
             }
-            
+
             const fadeElements = document.querySelectorAll('.fade-in');
             fadeElements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.3;
-                
+
                 if (elementPosition < screenPosition) {
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
@@ -1581,7 +1660,7 @@
 
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-        
+
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
@@ -1595,7 +1674,7 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
+
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     window.scrollTo({
@@ -1609,7 +1688,7 @@
         const modals = document.querySelectorAll('.modal');
         const openModalBtns = document.querySelectorAll('.open-modal');
         const closeModalBtns = document.querySelectorAll('.close-modal');
-        
+
         openModalBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const modalId = btn.getAttribute('data-modal');
@@ -1620,7 +1699,7 @@
                 }
             });
         });
-        
+
         closeModalBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const modal = btn.closest('.modal');
@@ -1630,7 +1709,7 @@
                 }
             });
         });
-        
+
         window.addEventListener('click', (e) => {
             modals.forEach(modal => {
                 if (e.target === modal) {
@@ -1639,7 +1718,7 @@
                 }
             });
         });
-        
+
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 modals.forEach(modal => {
@@ -1650,7 +1729,7 @@
                 });
             }
         });
-        
+
         document.addEventListener('DOMContentLoaded', function() {
             const fadeElements = document.querySelectorAll('.fade-in');
             fadeElements.forEach(element => {
@@ -1658,9 +1737,9 @@
                 element.style.transform = 'translateY(20px)';
                 element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             });
-            
+
             window.dispatchEvent(new Event('scroll'));
-            
+
             const savedLang = localStorage.getItem('preferredLanguage');
             if (savedLang) {
                 setLanguage(savedLang);
@@ -1668,11 +1747,11 @@
                 document.getElementById('cv-download-link').href = 'assets/DHP-Curriculum-es.pdf';
             }
         });
-        
+
         document.getElementById('lang-es').addEventListener('click', function() {
             setLanguage('es');
         });
-        
+
         document.getElementById('lang-en').addEventListener('click', function() {
             setLanguage('en');
         });
