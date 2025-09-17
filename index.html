@@ -943,7 +943,35 @@
             </div>
 
             <div class="projects-grid">
-                <!-- Nuevo proyecto: Android App -->
+                <!-- Nuevo proyecto: Sistema de Autenticación -->
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: rgba(247, 37, 133, 0.1);">
+                        <i class="fas fa-user-lock" style="color: #f72585; font-size: 4rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 id="project-6-title">Sistema de Autenticación Empresarial</h3>
+                        <p id="project-6-description">Sistema seguro de registro y autenticación de usuarios con encriptación de contraseñas, construido con Java y Oracle en contenedores Docker para máxima portabilidad.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Oracle DB</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">JDBC</span>
+                            <span class="tech-badge">Linux</span>
+                            <span class="tech-badge">SHA-256</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HaroPardo/Oracle-Docker-Java" target="_blank" class="btn btn-outline code-btn" id="project-6-code-btn">
+                                <i class="fab fa-github"></i> <span>Ver código</span>
+                            </a>
+                            <a href="assets/java-oracle-screenshots.zip" download="java-oracle-screenshots.zip" class="btn" id="project-6-images-btn">
+                                <i class="fas fa-images"></i> <span>Ver imágenes</span>
+                            </a>
+                            <a href="#" class="btn btn-outline open-modal" data-modal="java-oracle-modal" id="project-6-details-btn">Explicación Detallada</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto: Aplicación Android -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(61, 220, 132, 0.1);">
                         <i class="fab fa-android" style="color: #3DDC84; font-size: 4rem;"></i>
@@ -1100,7 +1128,10 @@
                         <i class="fas fa-window-maximize"></i>
                         <span>JavaFX</span>
                     </div>
-                    <!-- Añadido Electron aquí -->
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>Electron</span>
+                    </div>
                 </div>
 
                 <div class="skill-category fade-in delay-1">
@@ -1141,6 +1172,10 @@
                         <i class="fas fa-database"></i>
                         <span>SQLite</span>
                     </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>Oracle DB</span>
+                    </div>
                 </div>
 
                 <div class="skill-category fade-in delay-3">
@@ -1156,6 +1191,18 @@
                     <div class="skill-item">
                         <i class="fas fa-terminal"></i>
                         <span>CLI</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-windows"></i>
+                        <span>Windows</span>
                     </div>
                 </div>
             </div>
@@ -1240,6 +1287,32 @@
     </div>
 
     <!-- Modales para explicaciones detalladas -->
+    <!-- Modal para Sistema de Autenticación -->
+    <div id="java-oracle-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-java-oracle-title">Sistema de Autenticación Empresarial</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-section">
+                    <h3 id="java-oracle-modal-q1">¿Por qué lo creé?</h3>
+                    <p id="java-oracle-modal-a1">Identifiqué la creciente demanda de soluciones que utilicen Oracle y Docker, tecnologías empresariales robustas que deseaba dominar. Oracle ofrece un rendimiento excepcional para gestión de datos transaccionales, mientras que Docker proporciona un ecosistema de contenedores ideal para despliegues consistentes y escalables. Decidí combinar ambas tecnologías para crear una solución de autenticación segura y portable.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="java-oracle-modal-q2">¿Qué aprendí de este proyecto?</h3>
+                    <p id="java-oracle-modal-a2">Adquirí experiencia práctica con Oracle Database, comprendiendo su arquitectura y optimizaciones para entornos productivos. Dominé la contenerización con Docker, gestionando imágenes, volúmenes y networking. Aprendí a integrar librerías JDBC y implementar encriptación SHA-256 para seguridad de contraseñas. Además, fortalecí mis habilidades en administración de sistemas Linux, trabajando extensamente con la terminal para gestionar los contenedores y la base de datos.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="java-oracle-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
+                    <p id="java-oracle-modal-a3">Definitivamente. Este proyecto me ha permitido salir de mi zona de confort y explorar tecnologías empresariales ampliamente utilizadas en el sector. Me ha motivado a seguir aprendiendo sobre arquitecturas escalables, seguridad de datos y DevOps, áreas cruciales para el desarrollo de aplicaciones modernas y robustas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal para Aplicación Android -->
     <div id="android-modal" class="modal">
         <div class="modal-content">
@@ -1307,7 +1380,7 @@
 
                 <div class="detail-section">
                     <h3 id="crm-modal-q2">¿Qué aprendí de este proyecto?</h3>
-                    <p id="crm-modal-a2">Este proyecto me permitió profundizar mis habilidades de integración backend usando PHP y phpMyAdmin, reforzando mis capacidades de diseño de interfaces con HTML y CSS. Aprendí a crear sistemas completos que requieren gestión de bases de datos y experiencias de usuario funcionales y atractivas.</p>
+                    <p id="crm-modal-a2">Este proyecto me permitió profundizar mis habilidades de integración backend usando PHP y phpMyAdmin, reforzando mis capacidades de diseño de interfaces con HTML and CSS. Aprendí a crear sistemas completos que requieren gestión de bases de datos y experiencias de usuario funcionales y atractivas.</p>
                 </div>
 
                 <div class="detail-section">
@@ -1411,6 +1484,11 @@
                 "project-5-code-btn": "Ver código",
                 "project-5-store-btn": "Amazon Store",
                 "project-5-details-btn": "Explicación Detallada",
+                "project-6-title": "Sistema de Autenticación Empresarial",
+                "project-6-description": "Sistema seguro de registro y autenticación de usuarios con encriptación de contraseñas, construido con Java y Oracle en contenedores Docker para máxima portabilidad.",
+                "project-6-code-btn": "Ver código",
+                "project-6-images-btn": "Ver imágenes",
+                "project-6-details-btn": "Explicación Detallada",
 
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que he usado",
@@ -1435,6 +1513,14 @@
                 "notification-cv-text": "¡Curriculum abierto con éxito!",
 
                 "footer-text": "Diseñado y desarrollado por David Haro Pardo",
+
+                "modal-java-oracle-title": "Sistema de Autenticación Empresarial",
+                "java-oracle-modal-q1": "¿Por qué lo creé?",
+                "java-oracle-modal-a1": "Identifiqué la creciente demanda de soluciones que utilicen Oracle y Docker, tecnologías empresariales robustas que deseaba dominar. Oracle ofrece un rendimiento excepcional para gestión de datos transaccionales, mientras que Docker proporciona un ecosistema de contenedores ideal para despliegues consistentes y escalables. Decidí combinar ambas tecnologías para crear una solución de autenticación segura y portable.",
+                "java-oracle-modal-q2": "¿Qué aprendí de este proyecto?",
+                "java-oracle-modal-a2": "Adquirí experiencia práctica con Oracle Database, comprendiendo su arquitectura y optimizaciones para entornos productivos. Dominé la contenerización con Docker, gestionando imágenes, volúmenes y networking. Aprendí a integrar librerías JDBC y implementar encriptación SHA-256 para seguridad de contraseñas. Además, fortalecí mis habilidades en administración de sistemas Linux y Windows, trabajando extensamente con la terminal para gestionar los contenedores y la base de datos.",
+                "java-oracle-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
+                "java-oracle-modal-a3": "Definitivamente. Este proyecto me ha permitido salir de mi zona de confort y explorar tecnologías empresariales ampliamente utilizadas en el sector. Me ha motivado a seguir aprendiendo sobre arquitecturas escalables, seguridad de datos y DevOps, áreas cruciales para el desarrollo de aplicaciones modernas y robustas.",
 
                 "modal-android-title": "Aplicación Android",
                 "android-modal-q1": "¿Por qué lo creé?",
@@ -1515,6 +1601,11 @@
                 "project-5-code-btn": "View Code",
                 "project-5-store-btn": "Amazon Store",
                 "project-5-details-btn": "Detailed Explanation",
+                "project-6-title": "Enterprise Authentication System",
+                "project-6-description": "Secure user registration and authentication system with password encryption, built with Java and Oracle in Docker containers for maximum portability.",
+                "project-6-code-btn": "View Code",
+                "project-6-images-btn": "View Images",
+                "project-6-details-btn": "Detailed Explanation",
 
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I have used",
@@ -1539,6 +1630,14 @@
                 "notification-cv-text": "Resume opened successfully!",
 
                 "footer-text": "Designed and developed by David Haro Pardo",
+
+                "modal-java-oracle-title": "Enterprise Authentication System",
+                "java-oracle-modal-q1": "Why did I create it?",
+                "java-oracle-modal-a1": "I identified the growing demand for solutions using Oracle and Docker, robust enterprise technologies I wanted to master. Oracle offers exceptional performance for transactional data management, while Docker provides a container ecosystem ideal for consistent and scalable deployments. I decided to combine both technologies to create a secure and portable authentication solution.",
+                "java-oracle-modal-q2": "What did I learn from this project?",
+                "java-oracle-modal-a2": "I gained hands-on experience with Oracle Database, understanding its architecture and optimizations for production environments. I mastered containerization with Docker, managing images, volumes, and networking. I learned to integrate JDBC libraries and implement SHA-256 encryption for password security. Additionally, I strengthened my Linux system administration skills, working extensively with the terminal to manage containers and the database.",
+                "java-oracle-modal-q3": "Would you like to continue working on similar projects?",
+                "java-oracle-modal-a3": "Definitely. This project has allowed me to step out of my comfort zone and explore enterprise technologies widely used in the industry. It has motivated me to continue learning about scalable architectures, data security, and DevOps, crucial areas for the development of modern and robust applications.",
 
                 "modal-android-title": "Android Application",
                 "android-modal-q1": "Why did I create it?",
