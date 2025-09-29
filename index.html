@@ -943,6 +943,34 @@
             </div>
 
             <div class="projects-grid">
+                <!-- Nuevo proyecto: Sistema de Autenticación Python -->
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: rgba(76, 201, 240, 0.1);">
+                        <i class="fab fa-python" style="color: #4cc9f0; font-size: 4rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 id="project-7-title">Sistema de Autenticación con Python</h3>
+                        <p id="project-7-description">Sistema completo de autenticación con frontend en Angular y TypeScript, y backend en FastAPI con PostgreSQL. Implementa JWT, protección de rutas y hash de contraseñas.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">Angular</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HaroPardo/Authentification-PythonProject" target="_blank" class="btn btn-outline code-btn" id="project-7-code-btn">
+                                <i class="fab fa-github"></i> <span>Ver código</span>
+                            </a>
+                            <a href="assets/python-authentification.zip" download="python-authentification.zip" class="btn" id="project-7-images-btn">
+                                <i class="fas fa-images"></i> <span>Ver imágenes</span>
+                            </a>
+                            <a href="#" class="btn btn-outline open-modal" data-modal="python-auth-modal" id="project-7-details-btn">Explicación Detallada</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Nuevo proyecto: Sistema de Autenticación -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(247, 37, 133, 0.1);">
@@ -1125,12 +1153,20 @@
                         <span>JavaScript</span>
                     </div>
                     <div class="skill-item">
-                        <i class="fas fa-window-maximize"></i>
-                        <span>JavaFX</span>
+                        <i class="fab fa-angular"></i>
+                        <span>Angular</span>
                     </div>
                     <div class="skill-item">
                         <i class="fab fa-react"></i>
                         <span>Electron</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-window-maximize"></i>
+                        <span>JavaFX</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <span>TypeScript</span>
                     </div>
                 </div>
 
@@ -1151,6 +1187,18 @@
                     <div class="skill-item">
                         <i class="fas fa-server"></i>
                         <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>Uvicorn</span>
                     </div>
                 </div>
 
@@ -1287,6 +1335,32 @@
     </div>
 
     <!-- Modales para explicaciones detalladas -->
+    <!-- Modal para Sistema de Autenticación Python -->
+    <div id="python-auth-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-python-auth-title">Sistema de Autenticación con Python</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-section">
+                    <h3 id="python-auth-modal-q1">¿Por qué lo creé?</h3>
+                    <p id="python-auth-modal-a1">Quería expandir mis habilidades de backend más allá de Java y PHP, explorando Python que es ampliamente utilizado en la industria. Buscaba crear un sistema completo de autenticación que combinara las ventajas de FastAPI como framework moderno y eficiente con Angular para el frontend, implementando las mejores prácticas de seguridad como JWT y hash de contraseñas.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="python-auth-modal-q2">¿Qué aprendí de este proyecto?</h3>
+                    <p id="python-auth-modal-a2">Aprendí a desarrollar con Python y FastAPI, comprendiendo sus ventajas en cuanto a velocidad y simplicidad. Dominé la integración entre frontend y backend usando TypeScript con Angular, implementando protección de rutas y manejo de tokens JWT. También adquirí experiencia con PostgreSQL como base de datos relacional y comprendí la importancia de la seguridad en aplicaciones web, implementando bcrypt para hash de contraseñas y configurando CORS correctamente.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="python-auth-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
+                    <p id="python-auth-modal-a3">Definitivamente. Este proyecto me ha abierto las puertas al ecosistema de Python y frameworks modernos como FastAPI. Estoy entusiasmado por seguir explorando estas tecnologías y aplicarlas en proyectos más complejos, especialmente en el desarrollo de APIs robustas y aplicaciones web escalables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal para Sistema de Autenticación -->
     <div id="java-oracle-modal" class="modal">
         <div class="modal-content">
@@ -1489,6 +1563,11 @@
                 "project-6-code-btn": "Ver código",
                 "project-6-images-btn": "Ver imágenes",
                 "project-6-details-btn": "Explicación Detallada",
+                "project-7-title": "Sistema de Autenticación con Python",
+                "project-7-description": "Sistema completo de autenticación con frontend en Angular y TypeScript, y backend en FastAPI con PostgreSQL. Implementa JWT, protección de rutas y hash de contraseñas.",
+                "project-7-code-btn": "Ver código",
+                "project-7-images-btn": "Ver imágenes",
+                "project-7-details-btn": "Explicación Detallada",
 
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que he usado",
@@ -1513,6 +1592,14 @@
                 "notification-cv-text": "¡Curriculum abierto con éxito!",
 
                 "footer-text": "Diseñado y desarrollado por David Haro Pardo",
+
+                "modal-python-auth-title": "Sistema de Autenticación con Python",
+                "python-auth-modal-q1": "¿Por qué lo creé?",
+                "python-auth-modal-a1": "Quería expandir mis habilidades de backend más allá de Java y PHP, explorando Python que es ampliamente utilizado en la industria. Buscaba crear un sistema completo de autenticación que combinara las ventajas de FastAPI como framework moderno y eficiente con Angular para el frontend, implementando las mejores prácticas de seguridad como JWT y hash de contraseñas.",
+                "python-auth-modal-q2": "¿Qué aprendí de este proyecto?",
+                "python-auth-modal-a2": "Aprendí a desarrollar con Python y FastAPI, comprendiendo sus ventajas en cuanto a velocidad y simplicidad. Dominé la integración entre frontend y backend usando TypeScript con Angular, implementando protección de rutas y manejo de tokens JWT. También adquirí experiencia con PostgreSQL como base de datos relacional y comprendí la importancia de la seguridad en aplicaciones web, implementando bcrypt para hash de contraseñas y configurando CORS correctamente.",
+                "python-auth-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
+                "python-auth-modal-a3": "Definitivamente. Este proyecto me ha abierto las puertas al ecosistema de Python y frameworks modernos como FastAPI. Estoy entusiasmado por seguir explorando estas tecnologías y aplicarlas en proyectos más complejos, especialmente en el desarrollo de APIs robustas y aplicaciones web escalables.",
 
                 "modal-java-oracle-title": "Sistema de Autenticación Empresarial",
                 "java-oracle-modal-q1": "¿Por qué lo creé?",
@@ -1606,6 +1693,11 @@
                 "project-6-code-btn": "View Code",
                 "project-6-images-btn": "View Images",
                 "project-6-details-btn": "Detailed Explanation",
+                "project-7-title": "Python Authentication System",
+                "project-7-description": "Complete authentication system with Angular and TypeScript frontend, and FastAPI backend with PostgreSQL. Implements JWT, route protection and password hashing.",
+                "project-7-code-btn": "View Code",
+                "project-7-images-btn": "View Images",
+                "project-7-details-btn": "Detailed Explanation",
 
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I have used",
@@ -1630,6 +1722,14 @@
                 "notification-cv-text": "Resume opened successfully!",
 
                 "footer-text": "Designed and developed by David Haro Pardo",
+
+                "modal-python-auth-title": "Python Authentication System",
+                "python-auth-modal-q1": "Why did I create it?",
+                "python-auth-modal-a1": "I wanted to expand my backend skills beyond Java and PHP, exploring Python which is widely used in the industry. I aimed to create a complete authentication system that combined the advantages of FastAPI as a modern and efficient framework with Angular for the frontend, implementing security best practices like JWT and password hashing.",
+                "python-auth-modal-q2": "What did I learn from this project?",
+                "python-auth-modal-a2": "I learned to develop with Python and FastAPI, understanding their advantages in terms of speed and simplicity. I mastered the integration between frontend and backend using TypeScript with Angular, implementing route protection and JWT token handling. I also gained experience with PostgreSQL as a relational database and understood the importance of security in web applications, implementing bcrypt for password hashing and configuring CORS correctly.",
+                "python-auth-modal-q3": "Would you like to continue working on similar projects?",
+                "python-auth-modal-a3": "Definitely. This project has opened doors to the Python ecosystem and modern frameworks like FastAPI. I'm excited to continue exploring these technologies and applying them to more complex projects, especially in developing robust APIs and scalable web applications.",
 
                 "modal-java-oracle-title": "Enterprise Authentication System",
                 "java-oracle-modal-q1": "Why did I create it?",
