@@ -943,6 +943,35 @@
             </div>
 
             <div class="projects-grid">
+                <!-- Nuevo proyecto: Chrome AI API Extension -->
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: rgba(255, 193, 7, 0.1);">
+                        <i class="fab fa-chrome" style="color: #FFC107; font-size: 4rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 id="project-8-title">Chrome AI API Extension</h3>
+                        <p id="project-8-description">Extensión de Chrome que integra APIs de inteligencia artificial para mejorar la productividad y experiencia de navegación. Ofrece funcionalidades avanzadas de IA directamente en el navegador.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">AI</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">JSON</span>
+                            <span class="tech-badge">Google Chrome</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HaroPardo/chrome-AI-API" target="_blank" class="btn btn-outline code-btn" id="project-8-code-btn">
+                                <i class="fab fa-github"></i> <span>Ver código</span>
+                            </a>
+                            <a href="https://youtu.be/m6SopePV5l0" target="_blank" class="btn" id="project-8-video-btn">
+                                <i class="fas fa-video"></i> <span>Ver Video</span>
+                            </a>
+                            <a href="#" class="btn btn-outline open-modal" data-modal="chrome-ai-modal" id="project-8-details-btn">Explicación Detallada</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Nuevo proyecto: Sistema de Autenticación Python -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(76, 201, 240, 0.1);">
@@ -1168,6 +1197,10 @@
                         <i class="fab fa-js-square"></i>
                         <span>TypeScript</span>
                     </div>
+                    <div class="skill-item">
+                        <i class="fab fa-chrome"></i>
+                        <span>Chrome Extensions</span>
+                    </div>
                 </div>
 
                 <div class="skill-category fade-in delay-1">
@@ -1199,6 +1232,10 @@
                     <div class="skill-item">
                         <i class="fas fa-code"></i>
                         <span>Uvicorn</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-robot"></i>
+                        <span>AI APIs</span>
                     </div>
                 </div>
 
@@ -1251,6 +1288,10 @@
                     <div class="skill-item">
                         <i class="fab fa-windows"></i>
                         <span>Windows</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-file-code"></i>
+                        <span>JSON</span>
                     </div>
                 </div>
             </div>
@@ -1335,6 +1376,32 @@
     </div>
 
     <!-- Modales para explicaciones detalladas -->
+    <!-- Modal para Chrome AI API Extension -->
+    <div id="chrome-ai-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-chrome-ai-title">Chrome AI API Extension</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-section">
+                    <h3 id="chrome-ai-modal-q1">¿Por qué lo creé?</h3>
+                    <p id="chrome-ai-modal-a1">Quería explorar el desarrollo de extensiones de Chrome y combinar esta tecnología con APIs de inteligencia artificial para crear una herramienta que mejore la productividad en la navegación web. Me interesaba entender cómo integrar servicios de IA en el navegador y ofrecer funcionalidades avanzadas directamente en el contexto de navegación.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="chrome-ai-modal-q2">¿Qué aprendí de este proyecto?</h3>
+                    <p id="chrome-ai-modal-a2">Aprendí a desarrollar extensiones de Chrome desde cero, comprendiendo su arquitectura y ciclo de vida. Dominé la integración de APIs de IA y el manejo de respuestas asíncronas. También adquirí experiencia en el uso de TypeScript para desarrollar extensiones más robustas y mantenibles, y comprendí cómo gestionar permisos y almacenamiento local en el navegador.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="chrome-ai-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
+                    <p id="chrome-ai-modal-a3">Definitivamente. Este proyecto me ha abierto las puertas al desarrollo de extensiones de navegador y me ha mostrado el potencial de integrar IA en herramientas cotidianas. Estoy entusiasmado por seguir explorando esta combinación y desarrollar extensiones más sofisticadas que aprovechen el poder de la inteligencia artificial.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal para Sistema de Autenticación Python -->
     <div id="python-auth-modal" class="modal">
         <div class="modal-content">
@@ -1568,6 +1635,11 @@
                 "project-7-code-btn": "Ver código",
                 "project-7-images-btn": "Ver imágenes",
                 "project-7-details-btn": "Explicación Detallada",
+                "project-8-title": "Chrome AI API Extension",
+                "project-8-description": "Extensión de Chrome que integra APIs de inteligencia artificial para mejorar la productividad y experiencia de navegación. Ofrece funcionalidades avanzadas de IA directamente en el navegador.",
+                "project-8-code-btn": "Ver código",
+                "project-8-video-btn": "Ver Video",
+                "project-8-details-btn": "Explicación Detallada",
 
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que he usado",
@@ -1592,6 +1664,14 @@
                 "notification-cv-text": "¡Curriculum abierto con éxito!",
 
                 "footer-text": "Diseñado y desarrollado por David Haro Pardo",
+
+                "modal-chrome-ai-title": "Chrome AI API Extension",
+                "chrome-ai-modal-q1": "¿Por qué lo creé?",
+                "chrome-ai-modal-a1": "Quería explorar el desarrollo de extensiones de Chrome y combinar esta tecnología con APIs de inteligencia artificial para crear una herramienta que mejore la productividad en la navegación web. Me interesaba entender cómo integrar servicios de IA en el navegador y ofrecer funcionalidades avanzadas directamente en el contexto de navegación.",
+                "chrome-ai-modal-q2": "¿Qué aprendí de este proyecto?",
+                "chrome-ai-modal-a2": "Aprendí a desarrollar extensiones de Chrome desde cero, comprendiendo su arquitectura y ciclo de vida. Dominé la integración de APIs de IA y el manejo de respuestas asíncronas. También adquirí experiencia en el uso de TypeScript para desarrollar extensiones más robustas y mantenibles, y comprendí cómo gestionar permisos y almacenamiento local en el navegador.",
+                "chrome-ai-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
+                "chrome-ai-modal-a3": "Definitivamente. Este proyecto me ha abierto las puertas al desarrollo de extensiones de navegador y me ha mostrado el potencial de integrar IA en herramientas cotidianas. Estoy entusiasmado por seguir explorando esta combinación y desarrollar extensiones más sofisticadas que aprovechen el poder de la inteligencia artificial.",
 
                 "modal-python-auth-title": "Sistema de Autenticación con Python",
                 "python-auth-modal-q1": "¿Por qué lo creé?",
@@ -1698,6 +1778,11 @@
                 "project-7-code-btn": "View Code",
                 "project-7-images-btn": "View Images",
                 "project-7-details-btn": "Detailed Explanation",
+                "project-8-title": "Chrome AI API Extension",
+                "project-8-description": "Chrome extension that integrates artificial intelligence APIs to improve productivity and browsing experience. Offers advanced AI features directly in the browser.",
+                "project-8-code-btn": "View Code",
+                "project-8-video-btn": "View Video",
+                "project-8-details-btn": "Detailed Explanation",
 
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I have used",
@@ -1722,6 +1807,14 @@
                 "notification-cv-text": "Resume opened successfully!",
 
                 "footer-text": "Designed and developed by David Haro Pardo",
+
+                "modal-chrome-ai-title": "Chrome AI API Extension",
+                "chrome-ai-modal-q1": "Why did I create it?",
+                "chrome-ai-modal-a1": "I wanted to explore Chrome extension development and combine this technology with artificial intelligence APIs to create a tool that enhances productivity in web browsing. I was interested in understanding how to integrate AI services into the browser and offer advanced features directly in the browsing context.",
+                "chrome-ai-modal-q2": "What did I learn from this project?",
+                "chrome-ai-modal-a2": "I learned to develop Chrome extensions from scratch, understanding their architecture and lifecycle. I mastered the integration of AI APIs and handling asynchronous responses. I also gained experience using TypeScript to develop more robust and maintainable extensions, and understood how to manage permissions and local storage in the browser.",
+                "chrome-ai-modal-q3": "Would you like to continue working on similar projects?",
+                "chrome-ai-modal-a3": "Definitely. This project has opened doors to browser extension development and shown me the potential of integrating AI into everyday tools. I'm excited to continue exploring this combination and develop more sophisticated extensions that leverage the power of artificial intelligence.",
 
                 "modal-python-auth-title": "Python Authentication System",
                 "python-auth-modal-q1": "Why did I create it?",
