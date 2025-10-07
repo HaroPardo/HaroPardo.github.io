@@ -943,6 +943,35 @@
             </div>
 
             <div class="projects-grid">
+                <!-- NUEVO PROYECTO: Weather Chatbot with Gemini AI -->
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: rgba(76, 201, 240, 0.1);">
+                        <i class="fas fa-robot" style="color: #4cc9f0; font-size: 4rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 id="project-9-title">Weather Chatbot with Gemini AI</h3>
+                        <p id="project-9-description">Chatbot de escritorio con interfaz gráfica que proporciona pronósticos meteorológicos en tiempo real usando Google Gemini AI y WeatherAPI.com. Desarrollado en Python con Tkinter.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Tkinter</span>
+                            <span class="tech-badge">Google Gemini AI</span>
+                            <span class="tech-badge">WeatherAPI</span>
+                            <span class="tech-badge">REST API</span>
+                            <span class="tech-badge">Environment Variables</span>
+                            <span class="tech-badge">Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HaroPardo/chatbot" target="_blank" class="btn btn-outline code-btn" id="project-9-code-btn">
+                                <i class="fab fa-github"></i> <span>Ver código</span>
+                            </a>
+                            <a href="https://youtu.be/JlZjWnYQqDE" target="_blank" class="btn" id="project-9-video-btn">
+                                <i class="fas fa-video"></i> <span>Ver Video</span>
+                            </a>
+                            <a href="#" class="btn btn-outline open-modal" data-modal="weather-chatbot-modal" id="project-9-details-btn">Explicación Detallada</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Nuevo proyecto: Chrome AI API Extension -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(255, 193, 7, 0.1);">
@@ -1201,6 +1230,11 @@
                         <i class="fab fa-chrome"></i>
                         <span>Chrome Extensions</span>
                     </div>
+                    <!-- NUEVA HABILIDAD AÑADIDA -->
+                    <div class="skill-item">
+                        <i class="fas fa-window-restore"></i>
+                        <span>Tkinter</span>
+                    </div>
                 </div>
 
                 <div class="skill-category fade-in delay-1">
@@ -1236,6 +1270,15 @@
                     <div class="skill-item">
                         <i class="fas fa-robot"></i>
                         <span>AI APIs</span>
+                    </div>
+                    <!-- NUEVAS HABILIDADES AÑADIDAS -->
+                    <div class="skill-item">
+                        <i class="fas fa-cloud-sun"></i>
+                        <span>WeatherAPI</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Google Gemini AI</span>
                     </div>
                 </div>
 
@@ -1292,6 +1335,15 @@
                     <div class="skill-item">
                         <i class="fas fa-file-code"></i>
                         <span>JSON</span>
+                    </div>
+                    <!-- NUEVAS HABILIDADES AÑADIDAS -->
+                    <div class="skill-item">
+                        <i class="fas fa-key"></i>
+                        <span>Environment Variables</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>REST APIs</span>
                     </div>
                 </div>
             </div>
@@ -1373,6 +1425,32 @@
     <div id="notification" class="notification">
         <i class="fas fa-check-circle"></i>
         <span id="notification-text">¡Correo copiado al portapapeles!</span>
+    </div>
+
+    <!-- NUEVO MODAL: Weather Chatbot with Gemini AI -->
+    <div id="weather-chatbot-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-weather-chatbot-title">Weather Chatbot with Gemini AI</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-section">
+                    <h3 id="weather-chatbot-modal-q1">¿Por qué lo creé?</h3>
+                    <p id="weather-chatbot-modal-a1">Quería explorar la integración de APIs de inteligencia artificial con datos en tiempo real para crear una aplicación práctica y útil. El objetivo era combinar el poder de Google Gemini AI para el procesamiento de lenguaje natural con datos meteorológicos reales de WeatherAPI.com, todo ello empaquetado en una interfaz de escritorio fácil de usar.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="weather-chatbot-modal-q2">¿Qué aprendí de este proyecto?</h3>
+                    <p id="weather-chatbot-modal-a2">Aprendí a integrar múltiples APIs (Gemini AI y WeatherAPI.com) en una aplicación de Python, manejando respuestas asíncronas y errores de conexión. Dominé el desarrollo de interfaces gráficas con Tkinter, implementando un diseño moderno y responsive. También adquirí experiencia en la gestión segura de API keys usando variables de entorno y en el empaquetado completo de proyectos Python para distribución.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="weather-chatbot-modal-q3">¿Te gustaría seguir trabajando en proyectos similares?</h3>
+                    <p id="weather-chatbot-modal-a3">Definitivamente. Este proyecto me mostró el potencial de combinar IA con datos en tiempo real para crear aplicaciones inteligentes. Estoy entusiasmado por explorar más integraciones de IA y desarrollar chatbots más avanzados con capacidades de conversación más naturales y funcionalidades extendidas.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Modales para explicaciones detalladas -->
@@ -1568,7 +1646,7 @@
             <div class="modal-body">
                 <div class="detail-section">
                     <h3 id="movie-modal-q1">¿Por qué lo creé?</h3>
-                    <p id="movie-modal-a1">Desarrollé esta API REST como plataforma para profundizar en la gestión profesional de bases de datos SQL. Partiendo del concepto simple de un repositorio de películas, expandí el proyecto para explorar migraciones entre sistemas de gestión de bases de datos (de MySQL a PostgreSQL) y su implementación en entornos en la nube como Azure.</p>
+                    <p id="movie-modal-a1">Desarrollé esta API REST como plataforma para profundizar en la gestión profesional de bases de datos SQL. Partiendo del concepto simple de un repositorio de películas, expandí el proyecto para explorar migraciones entre sistemas de gestión de bases de datos (de MySQL to PostgreSQL) y su implementación en entornos en la nube como Azure.</p>
                 </div>
 
                 <div class="detail-section">
@@ -1640,6 +1718,11 @@
                 "project-8-code-btn": "Ver código",
                 "project-8-video-btn": "Ver Video",
                 "project-8-details-btn": "Explicación Detallada",
+                "project-9-title": "Weather Chatbot with Gemini AI",
+                "project-9-description": "Chatbot de escritorio con interfaz gráfica que proporciona pronósticos meteorológicos en tiempo real usando Google Gemini AI y WeatherAPI.com. Desarrollado en Python con Tkinter.",
+                "project-9-code-btn": "Ver código",
+                "project-9-video-btn": "Ver Video",
+                "project-9-details-btn": "Explicación Detallada",
 
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que he usado",
@@ -1727,7 +1810,15 @@
                 "whatsapp-modal-q2": "¿Qué aprendí de este proyecto?",
                 "whatsapp-modal-a2": "Aprendí a usar el framework Electron and a usar CommonJS, además de elementos que ya había usado como CSS, JavaScript o HTML. Tuve nuevos retos con ellos aprendiendo a usarlos en aplicación de escritorio, ya que su uso anterior a excepción de CSS fue exclusivamente en páginas web.",
                 "whatsapp-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
-                "whatsapp-modal-a3": "Sí, además, tengo pensado seguir sacando actualizaciones en esta aplicación hasta poder perfeccionarla e intentar añadir más funcionalidades."
+                "whatsapp-modal-a3": "Sí, además, tengo pensado seguir sacando actualizaciones en esta aplicación hasta poder perfeccionarla e intentar añadir más funcionalidades.",
+
+                "modal-weather-chatbot-title": "Weather Chatbot with Gemini AI",
+                "weather-chatbot-modal-q1": "¿Por qué lo creé?",
+                "weather-chatbot-modal-a1": "Quería explorar la integración de APIs de inteligencia artificial con datos en tiempo real para crear una aplicación práctica y útil. El objetivo era combinar el poder de Google Gemini AI para el procesamiento de lenguaje natural con datos meteorológicos reales de WeatherAPI.com, todo ello empaquetado en una interfaz de escritorio fácil de usar.",
+                "weather-chatbot-modal-q2": "¿Qué aprendí de este proyecto?",
+                "weather-chatbot-modal-a2": "Aprendí a integrar múltiples APIs (Gemini AI y WeatherAPI.com) en una aplicación de Python, manejando respuestas asíncronas y errores de conexión. Dominé el desarrollo de interfaces gráficas con Tkinter, implementando un diseño moderno y responsive. También adquirí experiencia en la gestión segura de API keys usando variables de entorno y en el empaquetado completo de proyectos Python para distribución.",
+                "weather-chatbot-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
+                "weather-chatbot-modal-a3": "Definitivamente. Este proyecto me mostró el potencial de combinar IA con datos en tiempo real para crear aplicaciones inteligentes. Estoy entusiasmado por explorar más integraciones de IA y desarrollar chatbots más avanzados con capacidades de conversación más naturales y funcionalidades extendidas."
             },
             en: {
                 "nav-home": "Home",
@@ -1783,6 +1874,11 @@
                 "project-8-code-btn": "View Code",
                 "project-8-video-btn": "View Video",
                 "project-8-details-btn": "Detailed Explanation",
+                "project-9-title": "Weather Chatbot with Gemini AI",
+                "project-9-description": "Desktop chatbot with graphical interface that provides real-time weather forecasts using Google Gemini AI and WeatherAPI.com. Developed in Python with Tkinter.",
+                "project-9-code-btn": "View Code",
+                "project-9-video-btn": "View Video",
+                "project-9-details-btn": "Detailed Explanation",
 
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I have used",
@@ -1870,7 +1966,15 @@
                 "whatsapp-modal-q2": "What did I learn from this project?",
                 "whatsapp-modal-a2": "I learned to use the Electron framework and CommonJS, in addition to elements I had used before like CSS, JavaScript and HTML. I faced new challenges learning to use them in a desktop application, as my previous experience (except for CSS) was exclusively with web pages.",
                 "whatsapp-modal-q3": "Would you like to continue working on similar projects?",
-                "whatsapp-modal-a3": "Yes, and I plan to continue releasing updates for this application to perfect it and add more functionality."
+                "whatsapp-modal-a3": "Yes, and I plan to continue releasing updates for this application to perfect it and add more functionality.",
+
+                "modal-weather-chatbot-title": "Weather Chatbot with Gemini AI",
+                "weather-chatbot-modal-q1": "Why did I create it?",
+                "weather-chatbot-modal-a1": "I wanted to explore the integration of artificial intelligence APIs with real-time data to create a practical and useful application. The goal was to combine the power of Google Gemini AI for natural language processing with real weather data from WeatherAPI.com, all packaged in an easy-to-use desktop interface.",
+                "weather-chatbot-modal-q2": "What did I learn from this project?",
+                "weather-chatbot-modal-a2": "I learned to integrate multiple APIs (Gemini AI and WeatherAPI.com) in a Python application, handling asynchronous responses and connection errors. I mastered GUI development with Tkinter, implementing a modern and responsive design. I also gained experience in secure API key management using environment variables and in complete Python project packaging for distribution.",
+                "weather-chatbot-modal-q3": "Would you like to continue working on similar projects?",
+                "weather-chatbot-modal-a3": "Definitely. This project showed me the potential of combining AI with real-time data to create intelligent applications. I'm excited to explore more AI integrations and develop more advanced chatbots with more natural conversation capabilities and extended features."
             }
         };
 
