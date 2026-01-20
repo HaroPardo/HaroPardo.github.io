@@ -6,7 +6,7 @@
     <title>David Haro Pardo - Portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Estilos existentes (se mantienen igual) */
+        /* Estilos existentes completos (no se modifican) */
         :root {
             --primary: #4361ee;
             --secondary: #3f37c9;
@@ -889,6 +889,11 @@
                 font-size: 0.9rem;
             }
         }
+
+        /* Estilos para AWS icon */
+        .fa-aws {
+            color: #FF9900;
+        }
     </style>
 </head>
 <body>
@@ -943,7 +948,33 @@
             </div>
 
             <div class="projects-grid">
-                <!-- NUEVO PROYECTO: Weather Chatbot with Gemini AI -->
+                <!-- NUEVO PROYECTO: AWS Portfolio Monitoring -->
+                <div class="project-card fade-in">
+                    <div class="project-img" style="background: rgba(255, 153, 0, 0.1);">
+                        <i class="fab fa-aws" style="color: #FF9900; font-size: 4rem;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 id="project-10-title">AWS Portfolio Monitoring System</h3>
+                        <p id="project-10-description">Sistema serverless de monitorización automática para mi portfolio web. Detección de caídas con Route 53, procesamiento Lambda y notificaciones SNS. Arquitectura cloud completamente automatizada.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">AWS Lambda</span>
+                            <span class="tech-badge">Amazon SNS</span>
+                            <span class="tech-badge">Route 53</span>
+                            <span class="tech-badge">CloudWatch</span>
+                            <span class="tech-badge">EventBridge</span>
+                            <span class="tech-badge">Serverless</span>
+                            <span class="tech-badge">IAM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="assets/aws-monitoring-portfolio.zip" download="aws-monitoring-portfolio.zip" class="btn" id="project-10-procedure-btn">
+                                <i class="fas fa-file-archive"></i> <span>Ver Procedimiento</span>
+                            </a>
+                            <a href="#" class="btn btn-outline open-modal" data-modal="aws-monitoring-modal" id="project-10-details-btn">Explicación Detallada</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO: Weather Chatbot with Gemini AI -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(76, 201, 240, 0.1);">
                         <i class="fas fa-robot" style="color: #4cc9f0; font-size: 4rem;"></i>
@@ -972,7 +1003,7 @@
                     </div>
                 </div>
 
-                <!-- Nuevo proyecto: Chrome AI API Extension -->
+                <!-- PROYECTO: Chrome AI API Extension -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(255, 193, 7, 0.1);">
                         <i class="fab fa-chrome" style="color: #FFC107; font-size: 4rem;"></i>
@@ -1001,7 +1032,7 @@
                     </div>
                 </div>
 
-                <!-- Nuevo proyecto: Sistema de Autenticación Python -->
+                <!-- PROYECTO: Sistema de Autenticación Python -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(76, 201, 240, 0.1);">
                         <i class="fab fa-python" style="color: #4cc9f0; font-size: 4rem;"></i>
@@ -1029,7 +1060,7 @@
                     </div>
                 </div>
 
-                <!-- Nuevo proyecto: Sistema de Autenticación -->
+                <!-- PROYECTO: Sistema de Autenticación Empresarial -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(247, 37, 133, 0.1);">
                         <i class="fas fa-user-lock" style="color: #f72585; font-size: 4rem;"></i>
@@ -1057,7 +1088,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto: Aplicación Android -->
+                <!-- PROYECTO: Aplicación Android -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(61, 220, 132, 0.1);">
                         <i class="fab fa-android" style="color: #3DDC84; font-size: 4rem;"></i>
@@ -1085,7 +1116,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto WhatsApp Extension -->
+                <!-- PROYECTO: WhatsApp Extension -->
                 <div class="project-card fade-in">
                     <div class="project-img" style="background: rgba(37, 211, 102, 0.1);">
                         <i class="fab fa-whatsapp" style="color: #25D366; font-size: 4rem;"></i>
@@ -1112,7 +1143,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto CRM -->
+                <!-- PROYECTO: Sistema CRM -->
                 <div class="project-card fade-in delay-1">
                     <div class="project-img">
                         <i class="fas fa-chart-line"></i>
@@ -1137,7 +1168,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto App de Adopción de Gatos -->
+                <!-- PROYECTO: App de Adopción de Gatos -->
                 <div class="project-card fade-in delay-2">
                     <div class="project-img">
                         <i class="fas fa-cat"></i>
@@ -1161,7 +1192,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto API de Películas -->
+                <!-- PROYECTO: API de Películas -->
                 <div class="project-card fade-in delay-3">
                     <div class="project-img">
                         <i class="fas fa-film"></i>
@@ -1230,7 +1261,6 @@
                         <i class="fab fa-chrome"></i>
                         <span>Chrome Extensions</span>
                     </div>
-                    <!-- NUEVA HABILIDAD AÑADIDA -->
                     <div class="skill-item">
                         <i class="fas fa-window-restore"></i>
                         <span>Tkinter</span>
@@ -1271,7 +1301,6 @@
                         <i class="fas fa-robot"></i>
                         <span>AI APIs</span>
                     </div>
-                    <!-- NUEVAS HABILIDADES AÑADIDAS -->
                     <div class="skill-item">
                         <i class="fas fa-cloud-sun"></i>
                         <span>WeatherAPI</span>
@@ -1279,6 +1308,11 @@
                     <div class="skill-item">
                         <i class="fas fa-brain"></i>
                         <span>Google Gemini AI</span>
+                    </div>
+                    <!-- NUEVA HABILIDAD AWS -->
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS (Lambda, SNS, Route53)</span>
                     </div>
                 </div>
 
@@ -1336,7 +1370,6 @@
                         <i class="fas fa-file-code"></i>
                         <span>JSON</span>
                     </div>
-                    <!-- NUEVAS HABILIDADES AÑADIDAS -->
                     <div class="skill-item">
                         <i class="fas fa-key"></i>
                         <span>Environment Variables</span>
@@ -1344,6 +1377,11 @@
                     <div class="skill-item">
                         <i class="fas fa-exchange-alt"></i>
                         <span>REST APIs</span>
+                    </div>
+                    <!-- NUEVA HABILIDAD AWS TOOLS -->
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS (CloudWatch, EventBridge)</span>
                     </div>
                 </div>
             </div>
@@ -1427,7 +1465,37 @@
         <span id="notification-text">¡Correo copiado al portapapeles!</span>
     </div>
 
-    <!-- NUEVO MODAL: Weather Chatbot with Gemini AI -->
+    <!-- NUEVO MODAL: AWS Portfolio Monitoring -->
+    <div id="aws-monitoring-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-aws-monitoring-title">AWS Portfolio Monitoring System</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-section">
+                    <h3 id="aws-monitoring-modal-q1">Arquitectura Serverless</h3>
+                    <p id="aws-monitoring-modal-a1">Sistema completo de monitorización automática para mi portfolio web (HaroPardo.github.io) utilizando servicios AWS serverless. La arquitectura elimina la necesidad de servidores dedicados y escala automáticamente.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="aws-monitoring-modal-q2">Flujo de Datos</h3>
+                    <p id="aws-monitoring-modal-a2"><strong>Detección (Route 53):</strong> Health check externo que verifica https://haropardo.github.io cada 30 segundos desde servidores AWS globales.<br>
+                    <strong>Evaluación (CloudWatch Alarm):</strong> Métrica HealthCheckStatus que activa alarma solo tras 3 fallos consecutivos, evitando falsos positivos.<br>
+                    <strong>Disparador (EventBridge):</strong> Regla que escucha cambios de estado de alarma (OK → ALARM o ALARM → OK).<br>
+                    <strong>Procesamiento (Lambda):</strong> Función Python que formatea mensajes y publica en SNS.<br>
+                    <strong>Entrega (SNS):</strong> Tema que reenvía notificaciones a suscriptores (mi email).</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3 id="aws-monitoring-modal-q3">Beneficios y Aprendizaje</h3>
+                    <p id="aws-monitoring-modal-a3">Este proyecto demostró mi capacidad para diseñar e implementar arquitecturas cloud nativas. Aprendí a orquestar múltiples servicios AWS, gestionar permisos IAM, y crear sistemas serverless completamente automatizados. La solución es costo-eficiente (solo pago por uso) y altamente disponible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Weather Chatbot with Gemini AI -->
     <div id="weather-chatbot-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1453,8 +1521,7 @@
         </div>
     </div>
 
-    <!-- Modales para explicaciones detalladas -->
-    <!-- Modal para Chrome AI API Extension -->
+    <!-- MODAL: Chrome AI API Extension -->
     <div id="chrome-ai-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1480,7 +1547,7 @@
         </div>
     </div>
 
-    <!-- Modal para Sistema de Autenticación Python -->
+    <!-- MODAL: Sistema de Autenticación Python -->
     <div id="python-auth-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1506,7 +1573,7 @@
         </div>
     </div>
 
-    <!-- Modal para Sistema de Autenticación -->
+    <!-- MODAL: Sistema de Autenticación Empresarial -->
     <div id="java-oracle-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1532,7 +1599,7 @@
         </div>
     </div>
 
-    <!-- Modal para Aplicación Android -->
+    <!-- MODAL: Aplicación Android -->
     <div id="android-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1558,7 +1625,7 @@
         </div>
     </div>
 
-    <!-- Modal para WhatsApp Extension -->
+    <!-- MODAL: WhatsApp Extension -->
     <div id="whatsapp-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1584,7 +1651,7 @@
         </div>
     </div>
 
-    <!-- Modal para CRM -->
+    <!-- MODAL: Sistema CRM -->
     <div id="crm-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1610,7 +1677,7 @@
         </div>
     </div>
 
-    <!-- Modal para App de Gatos -->
+    <!-- MODAL: App de Gatos -->
     <div id="cats-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1636,7 +1703,7 @@
         </div>
     </div>
 
-    <!-- Modal para API de Películas -->
+    <!-- MODAL: API de Películas -->
     <div id="movie-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -1723,6 +1790,10 @@
                 "project-9-code-btn": "Ver código",
                 "project-9-video-btn": "Ver Video",
                 "project-9-details-btn": "Explicación Detallada",
+                "project-10-title": "AWS Portfolio Monitoring System",
+                "project-10-description": "Sistema serverless de monitorización automática para mi portfolio web. Detección de caídas con Route 53, procesamiento Lambda y notificaciones SNS. Arquitectura cloud completamente automatizada.",
+                "project-10-procedure-btn": "Ver Procedimiento",
+                "project-10-details-btn": "Explicación Detallada",
 
                 "skills-title": "Mis Habilidades",
                 "skills-subtitle": "Tecnologías y herramientas que he usado",
@@ -1768,7 +1839,7 @@
                 "java-oracle-modal-q1": "¿Por qué lo creé?",
                 "java-oracle-modal-a1": "Identifiqué la creciente demanda de soluciones que utilicen Oracle y Docker, tecnologías empresariales robustas que deseaba dominar. Oracle ofrece un rendimiento excepcional para gestión de datos transaccionales, mientras que Docker proporciona un ecosistema de contenedores ideal para despliegues consistentes y escalables. Decidí combinar ambas tecnologías para crear una solución de autenticación segura y portable.",
                 "java-oracle-modal-q2": "¿Qué aprendí de este proyecto?",
-                "java-oracle-modal-a2": "Adquirí experiencia práctica con Oracle Database, comprendiendo su arquitectura y optimizaciones para entornos productivos. Dominé la contenerización con Docker, gestionando imágenes, volúmenes y networking. Aprendí a integrar librerías JDBC y implementar encriptación SHA-256 para seguridad de contraseñas. Además, fortalecí mis habilidades en administración de sistemas Linux y Windows, trabajando extensamente con la terminal para gestionar los contenedores y la base de datos.",
+                "java-oracle-modal-a2": "Adquirí experiencia práctica con Oracle Database, comprendiendo su arquitectura y optimizaciones para entornos productivos. Dominé la contenerización con Docker, gestionando imágenes, volúmenes y networking. Aprendí a integrar librerías JDBC y implementar encriptación SHA-256 para seguridad de contraseñas. Además, fortalecí mis habilidades en administración de sistemas Linux, trabajando extensamente con la terminal para gestionar los contenedores y la base de datos.",
                 "java-oracle-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
                 "java-oracle-modal-a3": "Definitivamente. Este proyecto me ha permitido salir de mi zona de confort y explorar tecnologías empresariales ampliamente utilizadas en el sector. Me ha motivado a seguir aprendiendo sobre arquitecturas escalables, seguridad de datos y DevOps, áreas cruciales para el desarrollo de aplicaciones modernas y robustas.",
 
@@ -1778,7 +1849,7 @@
                 "android-modal-q2": "¿Qué aprendí de este proyecto?",
                 "android-modal-a2": "Aunque ya contaba con experiencia en Java, descubrí que el desarrollo en Android Studio presenta un entorno y configuración únicos. Logré adaptarme y dominar aspectos clave como la integración de APIs de Google, gestión de bases de datos SQLite, y el uso de librerías como OSMDroid para mapas y Picasso para la carga de imágenes.",
                 "android-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
-                "android-modal-a3": "Definitivamente. Este proyecto ha despertado my interés en el desarrollo móvil, y estoy ansioso por seguir explorando las particularidades y capacidades únicas que ofrece la plataforma Android, así como las diferencias arquitectónicas y de UX respecto al desarrollo web y de escritorio.",
+                "android-modal-a3": "Definitivamente. Este proyecto ha despertado mi interés en el desarrollo móvil, y estoy ansioso por seguir explorando las particularidades y capacidades únicas que ofrece la plataforma Android, así como las diferencias arquitectónicas y de UX respecto al desarrollo web y de escritorio.",
 
                 "modal-crm-title": "Sistema CRM",
                 "crm-modal-q1": "¿Por qué lo creé?",
@@ -1794,7 +1865,7 @@
                 "cats-modal-q2": "¿Qué aprendí de este proyecto?",
                 "cats-modal-a2": "Esta experiencia validó mi pasión por transformar ideas complejas en software funcional. Técnicamente, dominé el desarrollo de interfaces dinámicas con FXML, implementé sistemas de mensajería y gestioné contenido multimedia mediante codificación Base64. El aprendizaje más significativo fue confirmar que con dedicación e investigación puedo resolver cualquier desafío técnico.",
                 "cats-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
-                "cats-modal-a3": "Definitivamente. Los proyectos complejos que requieren meses de desarrollo offrecen el mayor crecimiento profesional. Estoy entusiasmado por seguir explorando el potencial de Java y otras tecnologías para crear soluciones robustas con impacto positivo.",
+                "cats-modal-a3": "Definitivamente. Los proyectos complejos que requieren meses de desarrollo ofrecen el mayor crecimiento profesional. Estoy entusiasmado por seguir explorando el potencial de Java y otras tecnologías para crear soluciones robustas con impacto positivo.",
 
                 "modal-movie-title": "API de Base de Datos de Películas",
                 "movie-modal-q1": "¿Por qué lo creé?",
@@ -1818,7 +1889,15 @@
                 "weather-chatbot-modal-q2": "¿Qué aprendí de este proyecto?",
                 "weather-chatbot-modal-a2": "Aprendí a integrar múltiples APIs (Gemini AI y WeatherAPI.com) en una aplicación de Python, manejando respuestas asíncronas y errores de conexión. Dominé el desarrollo de interfaces gráficas con Tkinter, implementando un diseño moderno y responsive. También adquirí experiencia en la gestión segura de API keys usando variables de entorno y en el empaquetado completo de proyectos Python para distribución.",
                 "weather-chatbot-modal-q3": "¿Te gustaría seguir trabajando en proyectos similares?",
-                "weather-chatbot-modal-a3": "Definitivamente. Este proyecto me mostró el potencial de combinar IA con datos en tiempo real para crear aplicaciones inteligentes. Estoy entusiasmado por explorar más integraciones de IA y desarrollar chatbots más avanzados con capacidades de conversación más naturales y funcionalidades extendidas."
+                "weather-chatbot-modal-a3": "Definitivamente. Este proyecto me mostró el potencial de combinar IA con datos en tiempo real para crear aplicaciones inteligentes. Estoy entusiasmado por explorar más integraciones de IA y desarrollar chatbots más avanzados con capacidades de conversación más naturales y funcionalidades extendidas.",
+
+                "modal-aws-monitoring-title": "AWS Portfolio Monitoring System",
+                "aws-monitoring-modal-q1": "Arquitectura Serverless",
+                "aws-monitoring-modal-a1": "Sistema completo de monitorización automática para mi portfolio web (HaroPardo.github.io) utilizando servicios AWS serverless. La arquitectura elimina la necesidad de servidores dedicados y escala automáticamente.",
+                "aws-monitoring-modal-q2": "Flujo de Datos",
+                "aws-monitoring-modal-a2": "<strong>Detección (Route 53):</strong> Health check externo que verifica https://haropardo.github.io cada 30 segundos desde servidores AWS globales.<br><strong>Evaluación (CloudWatch Alarm):</strong> Métrica HealthCheckStatus que activa alarma solo tras 3 fallos consecutivos, evitando falsos positivos.<br><strong>Disparador (EventBridge):</strong> Regla que escucha cambios de estado de alarma (OK → ALARM o ALARM → OK).<br><strong>Procesamiento (Lambda):</strong> Función Python que formatea mensajes y publica en SNS.<br><strong>Entrega (SNS):</strong> Tema que reenvía notificaciones a suscriptores (mi email).",
+                "aws-monitoring-modal-q3": "Beneficios y Aprendizaje",
+                "aws-monitoring-modal-a3": "Este proyecto demostró mi capacidad para diseñar e implementar arquitecturas cloud nativas. Aprendí a orquestar múltiples servicios AWS, gestionar permisos IAM, y crear sistemas serverless completamente automatizados. La solución es costo-eficiente (solo pago por uso) y altamente disponible."
             },
             en: {
                 "nav-home": "Home",
@@ -1879,6 +1958,10 @@
                 "project-9-code-btn": "View Code",
                 "project-9-video-btn": "View Video",
                 "project-9-details-btn": "Detailed Explanation",
+                "project-10-title": "AWS Portfolio Monitoring System",
+                "project-10-description": "Serverless automatic monitoring system for my web portfolio. Downtime detection with Route 53, Lambda processing, and SNS notifications. Fully automated cloud architecture.",
+                "project-10-procedure-btn": "View Procedure",
+                "project-10-details-btn": "Detailed Explanation",
 
                 "skills-title": "My Skills",
                 "skills-subtitle": "Technologies and tools I have used",
@@ -1974,7 +2057,15 @@
                 "weather-chatbot-modal-q2": "What did I learn from this project?",
                 "weather-chatbot-modal-a2": "I learned to integrate multiple APIs (Gemini AI and WeatherAPI.com) in a Python application, handling asynchronous responses and connection errors. I mastered GUI development with Tkinter, implementing a modern and responsive design. I also gained experience in secure API key management using environment variables and in complete Python project packaging for distribution.",
                 "weather-chatbot-modal-q3": "Would you like to continue working on similar projects?",
-                "weather-chatbot-modal-a3": "Definitely. This project showed me the potential of combining AI with real-time data to create intelligent applications. I'm excited to explore more AI integrations and develop more advanced chatbots with more natural conversation capabilities and extended features."
+                "weather-chatbot-modal-a3": "Definitely. This project showed me the potential of combining AI with real-time data to create intelligent applications. I'm excited to explore more AI integrations and develop more advanced chatbots with more natural conversation capabilities and extended features.",
+
+                "modal-aws-monitoring-title": "AWS Portfolio Monitoring System",
+                "aws-monitoring-modal-q1": "Serverless Architecture",
+                "aws-monitoring-modal-a1": "Complete automatic monitoring system for my web portfolio (HaroPardo.github.io) using AWS serverless services. The architecture eliminates the need for dedicated servers and scales automatically.",
+                "aws-monitoring-modal-q2": "Data Flow",
+                "aws-monitoring-modal-a2": "<strong>Detection (Route 53):</strong> External health check that verifies https://haropardo.github.io every 30 seconds from global AWS servers.<br><strong>Evaluation (CloudWatch Alarm):</strong> HealthCheckStatus metric that triggers alarm only after 3 consecutive failures, avoiding false positives.<br><strong>Trigger (EventBridge):</strong> Rule that listens for alarm state changes (OK → ALARM or ALARM → OK).<br><strong>Processing (Lambda):</strong> Python function that formats messages and publishes to SNS.<br><strong>Delivery (SNS):</strong> Topic that forwards notifications to subscribers (my email).",
+                "aws-monitoring-modal-q3": "Benefits and Learning",
+                "aws-monitoring-modal-a3": "This project demonstrated my ability to design and implement native cloud architectures. I learned to orchestrate multiple AWS services, manage IAM permissions, and create completely automated serverless systems. The solution is cost-efficient (pay-per-use) and highly available."
             }
         };
 
